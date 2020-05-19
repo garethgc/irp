@@ -1,0 +1,60 @@
+---
+title: "Localisation"
+author: "Gareth"
+date: "5/19/2020"
+output: github_document
+---
+
+```{r}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(extrafont)
+```
+
+```{r}
+planning_areas<-st_read(here::here("irpdata/MP14_PLNG_AREA_NO_SEA_PL.shp"))
+```
+
+```{r}
+studied_areas<- planning_areas %>% 
+  filter(PLN_AREA_N=="ANG MO KIO"|PLN_AREA_N=="HOUGANG"|PLN_AREA_N=="BEDOK") %>% 
+  filter(PLN_AREA_C=="AM"|PLN_AREA_C=="HG"|PLN_AREA_C=="BD") %>% 
+  select(-REGION_N,-REGION_C)
+
+Hougang<-planning_areas %>% 
+  filter(PLN_AREA_N=="HOUGANG") %>% 
+  filter(PLN_AREA_C=="HG") %>% 
+  select(-REGION_N,-REGION_C)
+
+AngMoKio<-planning_areas %>% 
+  filter(PLN_AREA_N=="ANG MO KIO") %>% 
+  filter(PLN_AREA_C=="AM") %>% 
+  select(-REGION_N,-REGION_C)
+
+Bedok<-planning_areas %>% 
+  filter(PLN_AREA_N=="BEDOK") %>% 
+  filter(PLN_AREA_C=="BD") %>% 
+  select(-REGION_N,-REGION_C)
+```
+
+```{r fig.height=15,fig.width=10}
+tmap_mode("view")
+
+tm_shape(studied_areas)+
+  tm_borders(lty = "longdash",lwd = 1.4)+
+  tm_shape(Hougang)+
+  tm_fill("PLN_AREA_N",alpha=0.2,legend.show=FALSE)+
+  tm_text("PLN_AREA_N",size=2)+
+  tm_shape(AngMoKio)+
+  tm_fill("PLN_AREA_N",alpha=0.2,legend.show=FALSE)+
+  tm_text("PLN_AREA_N",size=2)+
+  tm_shape(Bedok)+
+  tm_fill("PLN_AREA_N",alpha=0.3,legend.show=FALSE)+
+  tm_text("PLN_AREA_N",size=2)
+```
+
+
+
+
