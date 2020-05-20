@@ -1,0 +1,62 @@
+--- 
+title: "Cycling and its development in Singapore: Spatial Comparison with MRTs and Buses with respect to amenities"
+author: "Gareth Conceicao 1004755"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+```{r message=FALSE,echo=FALSE}
+library(tidyverse)
+library(sf)
+library(osmdata)
+library(ggmap)
+library(tmap)
+library(ggplot2)
+library(styler)
+library(osrm)
+library(ggthemes)
+library(formattable)
+library(viridis)
+
+osmmrt <- readRDS(here::here("CUA Final Project/CUA_data/mrt.rds"))
+osmbicycle<-readRDS(here::here("CUA Final Project/CUA_data/bicycle.rds"))
+osmfoodcourt<- readRDS(here::here("CUA Final Project/CUA_data/foodcourt.rds"))
+
+
+bus_stop<-st_read(here::here('CUA Final Project/CUA_data/BusStopLocation_Jan2020/BusStop.shp'))
+bicycle_network<-osmbicycle$osm_lines
+mrt_stations<-st_read(here::here('CUA Final Project/CUA_data/TrainStation_Jan2020/MRTLRTStnPtt.shp'))
+foodcourt<-osmfoodcourt$osm_points
+supermarket<-st_read(here::here("CUA Final Project/CUA_data/Supermarkets/supermarkets-kml.kml"))
+
+
+planning_areas <- st_read(here::here("data/MP14_PLNG_AREA_NO_SEA_PL.shp")) %>% 
+  filter(!(OBJECTID == 49 | OBJECTID == 18)) # removed islands
+```
+
+```{r echo=FALSE,message=FALSE}
+showoff<-get_map(getbb("Singapore"),maptype = "roadmap")
+
+showoff1<-ggmap(showoff)+
+  geom_sf(data=bicycle_network,inherit.aes = FALSE,colour="#f03b20",fill="Black",alpha=0.5,size=1,shape=2)+
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.ticks.y = element_blank())
+```
+
+```{r}
+showoff1
+```
+
+
+
+
+
+# Introduction
+
+Singapore has long been respected as a country with an efficient urban planning system, marked by its meteoric rise over the past few decades (Marshall, 2016). Faced with the task of limited land capacity as well as the need for population growth to funnel it's economic progress, urban developement transformed the once fishing village into a concrete jungle. To facilitate the efficiency of movement for the people, mass transit systems became at important element in the city state's master plan; the ability to funnel large amounts of people to the industries and offices without the need to rely on immense road-building exercises that ran in friction against the land-use of Singapore (Barter, 2019). A mixed transport network was introduced, with efficient bus networks servicing within neighbourhoods to complement the Mass Rapid Transit (MRT) system which serviced long-distance travels across town centres (Barter, 2019). To make efficient use of the space, amenities were planted along the way, allowing Singaporeans to enjoy "convenience at their doorstep"(LTA, 2019). This eventually led to the pursuit of green connectivity, to build park connectors and cycling routes across the country in order to produce an environmental image across the concrete jungle (NParks, 2020). It's importance is ever growing, with the government further emphasising its commitment towards greening the landscape with a new slogan 'city in nature', with more park connectors and park life to be developed into the cityscape (Heng, 2020). While it is easy to plan for green spaces, the Singapore government plans with multi-land use in mind, making clear that these green spaces integrate with urban life, in extension, amenities that support society. In essence, this project will take a dive into the amenities placement and cycling routes provided across the country, in  an attempt to identify if cycling routes in parks have taken into account proximity to amenities, just as bus and train networks have done before.
