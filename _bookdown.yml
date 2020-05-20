@@ -1,0 +1,6 @@
+book_filename: "People-generated_spaces"
+delete_merged_file: true
+output_dir: "docs"
+language:
+  ui:
+    chapter_name: ""

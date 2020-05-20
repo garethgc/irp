@@ -1,0 +1,10 @@
+--- 
+title: "People-generated spaces in neighbourhoods"
+author: "Gareth Conceicao 1004755"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+---
+# Background
