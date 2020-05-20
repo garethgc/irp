@@ -5,6 +5,7 @@ date: "5/19/2020"
 output: github_document
 ---
 
+# Overview
 ```{r}
 library(tidyverse)
 library(sf)
@@ -16,6 +17,8 @@ library(extrafont)
 ```{r}
 planning_areas<-st_read(here::here("irpdata/MP14_PLNG_AREA_NO_SEA_PL.shp"))
 ```
+
+## 3 Neighbourhoods
 
 ```{r}
 studied_areas<- planning_areas %>% 
