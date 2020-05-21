@@ -7,7 +7,7 @@ output: github_document
 
 # Hougang
 
-```{r}
+```{r message=FALSE,echo=FALSE, warning=FALSE}
 library(tidyverse)
 library(sf)
 library(tmap)
@@ -15,19 +15,19 @@ library(tmaptools)
 library(extrafont)
 ```
 
-```{r}
+```{r message=FALSE,echo=FALSE,warning=FALSE}
 hougangspaces<-read_csv(here::here('irpdata/Hougang19052020.csv'))
 ```
 
-```{r}
+```{r message=FALSE,echo=FALSE,warning=FALSE}
 hougangspaces<-hougangspaces %>% 
   st_as_sf(coords = c('lon', 'lat'))
 
 st_crs(hougangspaces)<-"+proj=longlat +datum=WGS84 +no_defs"
 ```
 
-```{r}
-tmap_mode("plot")
-tm_shape(hougangspaces)+tm_dots(size = 0.3,col = "Category")
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+tmap_mode("view")
+tm_shape(hougangspaces)+tm_symbols(size = 2,shape ="Category", col= "Type of Space", legend.hist = TRUE)+tm_legend(outside=TRUE)
 ```
 

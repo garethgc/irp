@@ -6,7 +6,7 @@ output: github_document
 ---
 
 # Overview
-```{r}
+```{r message=FALSE,echo=FALSE,warning=FALSE}
 library(tidyverse)
 library(sf)
 library(tmap)
@@ -14,13 +14,15 @@ library(tmaptools)
 library(extrafont)
 ```
 
-```{r}
-planning_areas<-st_read(here::here("irpdata/MP14_PLNG_AREA_NO_SEA_PL.shp"))
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 ```
 
 ## 3 Neighbourhoods
 
-```{r}
+Neighborhoods that are shortlisted for study will be mature HDB estates, developed between the 1960s and the 1970s, as well as estates that hold a large population. Three neighborhoods, Hougang, Ang Mo Kio and Bedok will be chosen for observation. They are chosen not only for their development period, but they also carry a large populace of 180,000 and above while having shared boundaries (City Population, n.d.). Maturity is an important element as it enables better understanding of the interactions and processes in the spaces which may have changed across time while a large living demography enables a better capture and representation for other neighborhoods. As the three mature neighborhoods are found in close proximity to each other, this allows for the study to observe possible spatial ‘spillovers’, whereby spatial distributions and trends are present between neighborhoods. 
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
 studied_areas<- planning_areas %>% 
   filter(PLN_AREA_N=="ANG MO KIO"|PLN_AREA_N=="HOUGANG"|PLN_AREA_N=="BEDOK") %>% 
   filter(PLN_AREA_C=="AM"|PLN_AREA_C=="HG"|PLN_AREA_C=="BD") %>% 
@@ -40,10 +42,11 @@ Bedok<-planning_areas %>%
   filter(PLN_AREA_N=="BEDOK") %>% 
   filter(PLN_AREA_C=="BD") %>% 
   select(-REGION_N,-REGION_C)
+
+tmap_mode("view")
 ```
 
-```{r fig.height=15,fig.width=10}
-tmap_mode("view")
+```{r message=FALSE,echo=FALSE, warning=FALSE, fig.height=10,fig.width=10}
 
 tm_shape(studied_areas)+
   tm_borders(lty = "longdash",lwd = 1.4)+
