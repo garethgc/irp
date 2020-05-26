@@ -16,7 +16,8 @@ library(extrafont)
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
-hougangspaces<-read_csv(here::here('irpdata/Hougang19052020.csv'))
+hougangspaces1905<-read_csv(here::here('irpdata/Hougang19052020.csv'))
+hougangspaces2205<-read_csv(here::here('irpdata/Hougang22052020.csv'))
 
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 Hougang<-planning_areas %>% 
@@ -26,10 +27,13 @@ Hougang<-planning_areas %>%
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
-hougangspaces<-hougangspaces %>% 
+hougangspaces1905<-hougangspaces1905 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+hougangspaces2205<-hougangspaces2205 %>% 
   st_as_sf(coords = c('lon', 'lat'))
 
-st_crs(hougangspaces)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(hougangspaces1905)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(hougangspaces2205)<-"+proj=longlat +datum=WGS84 +no_defs"
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE ,fig.width=10,fig.height=10}
@@ -38,8 +42,10 @@ tmap_mode("view")
 tm_shape(Hougang)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
-tm_shape(hougangspaces)+
-  tm_symbols(size = 0.2, col= "Type of Space", alpha=0.7,legend.hist = TRUE)+
-  tm_legend(outside=TRUE)
+tm_shape(hougangspaces1905)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.hist = TRUE)+
+  tm_legend(outside=TRUE)+
+tm_shape(hougangspaces2205)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
 ```
 
