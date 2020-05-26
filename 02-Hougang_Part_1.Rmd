@@ -36,15 +36,14 @@ st_crs(hougangspaces1905)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(hougangspaces2205)<-"+proj=longlat +datum=WGS84 +no_defs"
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE ,fig.width=10,fig.height=10}
+```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
 
 tm_shape(Hougang)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
 tm_shape(hougangspaces1905)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.hist = TRUE)+
-  tm_legend(outside=TRUE)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7)+
 tm_shape(hougangspaces2205)+
   tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
 ```
