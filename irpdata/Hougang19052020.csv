@@ -1,25 +1,20 @@
 Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon
-1,Dropped pin,People-generated,Garden,No,No,No,None,0,None,None,1.3692339,103.8950701
-2,Dropped pin,State-people,Garden,No,Yes,Yes,Wooden Bench,2,None,None,1.370285,103.8966781
-3,Dropped pin,People-generated,Garden,No,No,Yes,None,0,None,None,1.3698553,103.8964585
-4,Dropped pin,People-generated,Garden,No,No,Yes,None,0,None,None,1.3690197,103.8964874
-5,Dropped pin,State-people,Outdoor,No,No,No,None,0,None,None,1.3674859,103.8968484
-6,Dropped pin,State-people,Outdoor,Yes,Yes(Debatable),Debatable,"Concrete chairs
-Foldable chairs
-Stone Bench
-Wooden Bench",20,None,Yes,1.366946,103.8969427
-7,Dropped pin,State-people,Garden,No,Yes,Yes,Wooden Bench,2,None,None,1.3668602,103.8988521
-8,Dropped pin,State-people,Garden,No,Yes,Yes,Wooden Bench,2,None,None,1.3674286,103.8981084
-9,Dropped pin,People-generated,Garden,No,No,Yes,None,0,None,None,1.368394,103.8983213
-10,Dropped pin,People-generated,Garden,No,No,Yes,None,0,None,None,1.3682699,103.8982932
-11,Dropped pin,State-people,Garden,Yes,Yes(Debatable),Debatable,Wooden Bench,2,None,Maybe,1.369008,103.897516
-12,Dropped pin,State-people,Resident's Corner,Yes,Yes(Debatable),Yes,Concrete chairs,36,TV,None,1.3689111,103.8983884
-13,Dropped pin,People-generated,Garden,No,No,Yes,None,0,None,None,1.3700213,103.8982549
-14,Dropped pin,State-people,Garden,No,Yes,Yes,Wooden Bench,2,None,None,1.3706015,103.8989959
-15,Dropped pin,State-people,Garden,No,Yes,Yes,None,0,None,None,1.3716764,103.8992075
-16,Dropped pin,State-people,Garden,No,Yes,Yes,None,0,None,None,1.3716764,103.8992075
-17,Dropped pin,State-provided,Void Deck,Yes,Yes,Yes,Concrete chairs,16,None,None,1.3726497,103.8996852
-18,Dropped pin,State-provided,Void Deck,Yes,Yes,Yes,Concrete chairs,14,None,None,1.3730362,103.8995501
-19,Dropped pin,State-people,Resident's Corner,Yes,Yes,Yes,"Concrete chairs
-Plastic chairs
-Leather chair",28,TV,Yes,1.3725056,103.8991971
+HG-G-1,Dropped pin,People-generated,Garden,No,Not demarcated,Not clean,None,0,None,None,1.3692339,103.8950701
+HG-G-10,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3700213,103.8982549
+HG-G-11,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3706015,103.8989959
+HG-G-12,Dropped pin,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3716764,103.8992075
+HG-G-13,Dropped pin,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3716764,103.8992075
+HG-G-2,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.370285,103.8966781
+HG-G-3,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3698553,103.8964585
+HG-G-4,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3690197,103.8964874
+HG-G-5,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3668602,103.8988521
+HG-G-6,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3674286,103.8981084
+HG-G-7,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.368394,103.8983213
+HG-G-8,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3682699,103.8982932
+HG-G-9,Dropped pin,State-people,Garden,Yes,Semi-demarcated,Semi-clean,Fixed,2,None,Present,1.369008,103.897516
+HG-O-1,Dropped pin,State-people,Outdoor,No,Not demarcated,Not clean,None,0,None,None,1.3674859,103.8968484
+HG-O-2,Dropped pin,State-people,Outdoor,Yes,Semi-demarcated,Semi-clean,Mixed,20,None,Present,1.366946,103.8969427
+HG-RC-1,Dropped pin,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Fixed,36,Present,None,1.3689111,103.8983884
+HG-RC-2,Dropped pin,State-people,Resident's Corner,Yes,Demarcated,Clean,Mixed,28,Present,Present,1.3725056,103.8991971
+HG-V-1,Dropped pin,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,16,None,None,1.3726497,103.8996852
+HG-V-2,Dropped pin,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,14,None,None,1.3730362,103.8995501

@@ -1,36 +1,18 @@
 Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon,Remarks
-1,,State-provided,Study Corner,No,Demarcated,Clean,Fixed,29,None,None,1.3550745,103.8903458,"Study corner
-State -provided
-One staircase leads directly into space (could be obstructive for non-users and users alike) 
-Demarcated by Low Walls 
-Near lift landing
-2 four-seater tables 
-21 chairs/study tables
-No surveillance
-No electrical fans/plugs
-Naturally ventilated "
-2,,State-provided,Resident's Corner,No,Demarcated,Semi-clean,Fixed,20,None,None,1.3549733,103.8910894,"State-provided residents corner
-Demarcated by Low Walls
-2 four-seater tables
-12 metal seats,
-One small round table
-No cameras "
-3,,State-provided,Outdoor ,Yes,Demarcated,Clean,Fixed,Need to Check,None,None,1.3550604,103.8916215,"Large open community space
-Sheltered
-State-provided
-Has ventilation and lighting "
-4,,State-provided,Elderly Care,Yes,Demarcated,Clean,Fixed,20,Possible,None,1.3553323,103.8912604,"Elderly care centre
+HG-EC-1,,State-provided,Elderly Care,Yes,Demarcated,Clean,Fixed,20,Possible,None,1.3553323,103.8912604,"Elderly care centre
 State-provided
 Fitness section included. 
 No tables ( could have been moved out due to covid) 
 10 wooden benches
 Locked cabinets (unclear what they store)"
-5,,State-provided,Outdoor ,Yes,Demarcated,Clean,Fixed,14,None,None,1.3553417,103.8910187,"State provided
-Outdoor area, sheltered and non-sheltered. 
-2 four seater tables
-2 benches (shelter)
-Lighting provided"
-6,,People-generated,Garden,No,Demarcated,Clean,Mobile,3,None,Present,1.3561635,103.8904396,"Large community garden
+HG-EC-2,,State-people,Elderly Care,No,Semi-demarcated,Clean,Mixed,11,None,None,1.3641646,103.8931001,"State provided space
+No tables, 5 metal benches
+Exercise corner built within
+Near elderly care centre
+1 plastic stool
+Some boxes present 
+No surveillance"
+HG-G-14,,People-generated,Garden,No,Demarcated,Clean,Mobile,3,None,Present,1.3561635,103.8904396,"Large community garden
 Likelihood is people-generated due to heterogeneity
 Though possible state tolerated as it is large. 
 Demarcated by concrete kerbs, bricks and Low fences
@@ -38,7 +20,134 @@ Plastic stools found inside
 Religious ornaments found in one
 Aviary present as well
 Advanced community garden"
-7,,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Mixed,26,Present,Present,1.3560274,103.8903572,"State-provided
+HG-G-15,,People-generated,Garden,No,Not demarcated,Semi-clean,Mobile,2,None,Present,1.3568168,103.8917583,"Garden (large)
+People-generated
+Layout is row wise
+Mature plants 
+Concrete tiles placed for walkability through
+Disorganized 
+Relatively clean
+No surveillance"
+HG-G-16,,People-generated,Garden,Yes,Not demarcated,Clean,Mobile,3,None,None,1.3570745,103.8917476,"Garden
+People-generated
+Disorganized
+Clean
+One cctv on the inner garden
+Most like managed by residents"
+HG-G-17,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3571798,103.8920714,"Mini garden
+People-generated
+Disorganized but clean
+No surveillance
+Most likely managed by residents nearby"
+HG-G-18,,People-generated,Garden,No,Not demarcated,Semi-clean,Mobile,2,None,None,1.3604079,103.8912953,"Gardens
+People generated
+Demarcated with mini fences, some not
+Relatively well maintained, although disorganized. 
+Should be tended by residents "
+HG-G-19,,People-generated,Garden,Semi,Not demarcated,Semi-clean,None,0,None,None,1.3605035,103.8917271,"Mini garden
+People generated
+Relatively young (with supports)
+Disorganized 
+Cctv only sees a portion"
+HG-G-20,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3662039,103.8956696,"Larger garden, more organised with a mini demarcation.
+ Has a mesh for young plants
+Beside lift landing"
+HG-G-21,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3661891,103.8958386,"Larger than the gardens on the same stretch
+Beside a pathway that was built, also beside the lift landing.
+A little overgrown, but still clean"
+HG-G-22,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3662116,103.8960351,"Mini garden 
+People-generated spaces 
+Same as all those on the same stretch
+Could be indication of some state tolerance"
+HG-G-23,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3662002,103.8963164,"Mini gardens
+People generated 
+No surveillance
+Very open. 
+Well kept"
+HG-G-24,,People-generated,Garden,No,Semi-demarcated,Semi-clean,None,0,None,None,1.3663272,103.8967707,"People generated garden
+No paths, but relatively organised and clean
+Looks mature, with two trees
+Behind a lift landing that was newly upgraded. "
+HG-G-25,,State-people,Garden,No,Not demarcated,Semi-clean,None,0,None,None,1.3670861,103.8955161,"Garden
+Small allocated plot along a construction fence
+Had notice of non-attendance
+No demarcation
+Near lift landing, surveillance can reach the space
+Near resident office"
+HG-G-26,,People-generated,Garden,No,Not demarcated,Clean,Mobile,2,None,None,1.3670904,103.8948569,"People generated gardens
+
+Long stretch
+Disorganized, but kept relatively well cleaned (should be from residents who live closest)
+No demarcation or surveillance "
+HG-G-27,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3679492,103.8948318,"Garden
+People-generated
+No seating
+Relatively disorganized
+But cleaned (residents from nearby most likelihood)"
+HG-O-10,,State-provided,Outdoor ,Yes,Demarcated,Clean,Fixed,24,None,None,1.3665753,103.8945612,"Large seating open area
+
+State-provided
+12 stone benches
+Under a relatively young tree (could have been cut recently too) 
+Near a school side gate and the shelter towards it"
+HG-O-11,,State-provided,Outdoor,No,Demarcated,Not clean,Fixed,8,None,None,1.3662129,103.896481,"State-provided 4 stone benches
+Old
+Under two trees (has been cut recently so no shade) 
+Litter can be found here, indicating possibly recent activity"
+HG-O-12,,State-provided,Outdoor ,No,Demarcated,Clean,Fixed,14,None,None,1.366882,103.8964786,"State provided
+Outdoor 
+2 crescent tables 
+1 six-seater stone table
+Lighting provided
+No path accessibility 
+High upslope
+Near bus stop
+No surveillance"
+HG-O-13,,State-provided,Outdoor,No,Demarcated,Clean,Fixed,8,None,None,1.3681101,103.8937951,"State-provided space
+Outdoor
+4 two-seater metal benches
+Tiled floor
+Near bus stop"
+HG-O-3,,State-provided,Outdoor ,Yes,Demarcated,Clean,Fixed,Need to Check,None,None,1.3550604,103.8916215,"Large open community space
+Sheltered
+State-provided
+Has ventilation and lighting "
+HG-O-4,,State-provided,Outdoor ,Yes,Demarcated,Clean,Fixed,14,None,None,1.3553417,103.8910187,"State provided
+Outdoor area, sheltered and non-sheltered. 
+2 four seater tables
+2 benches (shelter)
+Lighting provided"
+HG-O-5,,People-generated,Outdoor ,No,Not demarcated,Clean,Mobile,3,None,None,1.3563087,103.8900913,"3 seater table set up
+People-generated
+Simple layout"
+HG-O-6,,State-provided,Outdoor,No,Demarcated,Clean,Fixed,14,None,None,1.3590149,103.8911296,"Outdoor space
+State-provided
+One gazebo, 4 wooden benches
+2 stone tables, crescent seating
+Demarcation is clear
+No surveillance "
+HG-O-7,,State-provided,Outdoor,Yes,Demarcated,Clean,Fixed,10,None,None,1.3605484,103.8929022,"Gazebo
+State provided semi-outdoor space
+3 diagonal benches
+2 wooden benches
+Lift landing cctv can see
+Demarcation done by floor tiles"
+HG-O-8,,State-provided,Outdoor ,No,Demarcated,Clean,Fixed,8,None,None,1.363331,103.8929958,"Relatively new state provided space
+Outdoor
+4 benches, with bars in between 
+No onsite surveillance "
+HG-O-9,,State-provided,Outdoor ,No,Demarcated,Clean,None,0,None,None,1.3646882,103.8951644,"Large outdoor space
+Walking path
+State-provided
+Demarcated 
+No surveillance"
+HG-RC-3,,State-provided,Resident's Corner,No,Demarcated,Semi-clean,Fixed,20,None,None,1.3549733,103.8910894,"State-provided residents corner
+Demarcated by Low Walls
+2 four-seater tables
+12 metal seats,
+One small round table
+No cameras "
+HG-RC-4,,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Mixed,26,Present,Present,1.3560274,103.8903572,"State-provided
 Community grown
 Near mailbox and lift landing
 2 eight-seater table
@@ -51,17 +160,7 @@ Fish tank with arowana (operating via toilet, but placed publicly, though secure
 Religious statue present, Chinese decorations
 No physical demarcation of space
 "
-8,,People-generated,Outdoor ,No,Not demarcated,Clean,Mobile,3,None,None,1.3563087,103.8900913,"3 seater table set up
-People-generated
-Simple layout"
-9,,State-people,Void Deck,Yes,Demarcated,Clean,Fixed,12,None,Present,1.3564414,103.8914887,"State provided 
-Near minimart
-2 stone tables, crescent seating
-1 crescent stone bench
-Demarcation by Low wall
-Near lift landing and mail box
-Cctv surveillance "
-10,,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Fixed,30,Present,Present,1.3565336,103.8918103,"Residents Corner
+HG-RC-5,,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Fixed,30,Present,Present,1.3565336,103.8918103,"Residents Corner
 State-provided
 Demarcated (semi) by Low Walls
 Near lift landing
@@ -72,38 +171,7 @@ Multiple toilet provision
 TV cabinet (with locks)
 Religious ornament/altar set up
 Cctv surveillance"
-11,,People-generated,Garden,No,Not demarcated,Semi-clean,Mobile,2,None,Present,1.3568168,103.8917583,"Garden (large)
-People-generated
-Layout is row wise
-Mature plants 
-Concrete tiles placed for walkability through
-Disorganized 
-Relatively clean
-No surveillance"
-12,,People-generated,Garden,Yes,Not demarcated,Clean,Mobile,3,None,None,1.3570745,103.8917476,"Garden
-People-generated
-Disorganized
-Clean
-One cctv on the inner garden
-Most like managed by residents"
-13,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3571798,103.8920714,"Mini garden
-People-generated
-Disorganized but clean
-No surveillance
-Most likely managed by residents nearby"
-14,,State-people,Void Deck,Yes,Demarcated,Semi-clean,Fixed,12,None,None,1.3575063,103.8922495,"State provided
-Outside minimart 
-2 stone tables, crescent seating
-One crescent bench 
-Demarcation by Low wall
-A little messy. 
-2 cameras"
-15,,State-provided,Void Deck,No,Demarcated,Clean,Fixed,12,None,None,1.3581243,103.8920818,"State-provided
-2 four-seater tables, wall benches
-Demarcated by Low Walls
-No surveillance
-Near mailbox "
-16,,State-provided,Resident's Corner and Study Corner,No,Demarcated,Clean,Fixed,21,None,None,1.358372,103.891481,"Residents Corner and study corner
+HG-RC-6,,State-provided,Resident's Corner and Study Corner,No,Demarcated,Clean,Fixed,21,None,None,1.358372,103.891481,"Residents Corner and study corner
 State-provided
 Demarcated by Low walls and fences
 2 four-seater tables
@@ -111,170 +179,7 @@ Demarcated by Low walls and fences
 4 metal chairs
 No camera
 Near school gate"
-17,,State-provided,Outdoor,No,Demarcated,Clean,Fixed,14,None,None,1.3590149,103.8911296,"Outdoor space
-State-provided
-One gazebo, 4 wooden benches
-2 stone tables, crescent seating
-Demarcation is clear
-No surveillance "
-18,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,20,None,None,1.3596565,103.8926551,"State provided 
-2 four-seater tables
-4 three-seater benches
-Cameras present 
-Properly demarcated "
-19,,People-generated,Garden,No,Not demarcated,Semi-clean,Mobile,2,None,None,1.3604079,103.8912953,"Gardens
-People generated
-Demarcated with mini fences, some not
-Relatively well maintained, although disorganized. 
-Should be tended by residents "
-20,,People-generated,Garden,Semi,Not demarcated,Semi-clean,None,0,None,None,1.3605035,103.8917271,"Mini garden
-People generated
-Relatively young (with supports)
-Disorganized 
-Cctv only sees a portion"
-21,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,8,None,None,1.3604673,103.8919306,"State provided 
-
-2 stone tables, crescent seating 
-Cameras present
-Near an outdoor open area "
-22,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,4,None,None,1.3605202,103.8923222,"State provided
-Stone Table obstruction (void deck activities) 
-Seats 4
-No surveillance 
-Yet quite open"
-23,,State-provided,Outdoor,Yes,Demarcated,Clean,Fixed,10,None,None,1.3605484,103.8929022,"Gazebo
-State provided semi-outdoor space
-3 diagonal benches
-2 wooden benches
-Lift landing cctv can see
-Demarcation done by floor tiles"
-24,,State-people,Void Deck,Semi,Not demarcated,Semi-clean,Mixed,18,None,Present,1.363075,103.8931802,"State provided and people generated
-5 metal benches
-1 four-seater table, with 3 added stools
-1 cabinet with drawers (no lock) 
-Few plastic boxes
-Motorcycle storage. 
-Cleaning corner near water point 
-Table is in range of CCTV at lift landing
-No real proper demarcation of a gathering space. "
-25,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,2,None,None,1.3633445,103.8931956,"State provided
-Awkward space
-Two concrete stumps, in the middle of the void deck
-Most likely used to obstruct rather than function as a space
-No surveillance 
-No demarcation "
-26,,State-provided,Outdoor ,No,Demarcated,Clean,Fixed,8,None,None,1.363331,103.8929958,"Relatively new state provided space
-Outdoor
-4 benches, with bars in between 
-No onsite surveillance "
-27,,State-people,Elderly Care,No,Semi-demarcated,Clean,Mixed,11,None,None,1.3641646,103.8931001,"State provided space
-No tables, 5 metal benches
-Exercise corner built within
-Near elderly care centre
-1 plastic stool
-Some boxes present 
-No surveillance"
-28,,State-provided,Outdoor ,No,Demarcated,Clean,None,0,None,None,1.3646882,103.8951644,"Large outdoor space
-Walking path
-State-provided
-Demarcated 
-No surveillance"
-29,,State-provided,Outdoor ,Yes,Demarcated,Clean,Fixed,24,None,None,1.3665753,103.8945612,"Large seating open area
-
-State-provided
-12 stone benches
-Under a relatively young tree (could have been cut recently too) 
-Near a school side gate and the shelter towards it"
-30,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,6,None,None,1.3666795,103.8950443,"State provided space
-Only 1 six-seater table (old)
-Low wall demarcating space. 
-Lift landing CCTV can reach the space"
-31,,State-people,Void Deck,No,Semi-demarcated,Semi-clean,Fixed,8,None,Present,1.3666658,103.8952079,"Site office, that may have led to a space being relocated
-Religious ornament (altar found)
-1 six-seater stone table
-1 bench "
-32,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3662039,103.8956696,"Larger garden, more organised with a mini demarcation.
- Has a mesh for young plants
-Beside lift landing"
-33,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3661891,103.8958386,"Larger than the gardens on the same stretch
-Beside a pathway that was built, also beside the lift landing.
-A little overgrown, but still clean"
-34,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3662116,103.8960351,"Mini garden 
-People-generated spaces 
-Same as all those on the same stretch
-Could be indication of some state tolerance"
-35,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3662002,103.8963164,"Mini gardens
-People generated 
-No surveillance
-Very open. 
-Well kept"
-36,,State-provided,Outdoor,No,Demarcated,Not clean,Fixed,8,None,None,1.3662129,103.896481,"State-provided 4 stone benches
-Old
-Under two trees (has been cut recently so no shade) 
-Litter can be found here, indicating possibly recent activity"
-37,,People-generated,Garden,No,Semi-demarcated,Semi-clean,None,0,None,None,1.3663272,103.8967707,"People generated garden
-No paths, but relatively organised and clean
-Looks mature, with two trees
-Behind a lift landing that was newly upgraded. "
-38,,State-provided,Void Deck,No,Demarcated,Clean,Fixed,15,None,None,1.3666581,103.8963502,"Non-homogeneous state-provided space
-1 four seater table with 3 added stools, 
-1 wooden bench with bars built in between
-1 six-seater stone table
-No surveillnce"
-39,,State-provided,Void Deck,No,Demarcated,Not clean,Fixed,11,None,None,1.3668558,103.8959137,"State provided space 
-1 four-seater table, with added 3 stools. 
-2 wooden benches, but with bars built in between (could speak of homelessness) 
-Wheel chair and pillows found
-No surveillance"
-40,,State-provided,Outdoor ,No,Demarcated,Clean,Fixed,14,None,None,1.366882,103.8964786,"State provided
-Outdoor 
-2 crescent tables 
-1 six-seater stone table
-Lighting provided
-No path accessibility 
-High upslope
-Near bus stop
-No surveillance"
-41,,State-people,Garden,No,Not demarcated,Semi-clean,None,0,None,None,1.3670861,103.8955161,"Garden
-Small allocated plot along a construction fence
-Had notice of non-attendance
-No demarcation
-Near lift landing, surveillance can reach the space
-Near resident office"
-42,,People-generated,Garden,No,Not demarcated,Clean,Mobile,2,None,None,1.3670904,103.8948569,"People generated gardens
-
-Long stretch
-Disorganized, but kept relatively well cleaned (should be from residents who live closest)
-No demarcation or surveillance "
-43,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3679492,103.8948318,"Garden
-People-generated
-No seating
-Relatively disorganized
-But cleaned (residents from nearby most likelihood)"
-44,,State-provided,Outdoor,No,Demarcated,Clean,Fixed,8,None,None,1.3681101,103.8937951,"State-provided space
-Outdoor
-4 two-seater metal benches
-Tiled floor
-Near bus stop"
-45,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,16,None,Present,1.3686236,103.8944127,"State-provided space beside minimart
-Old style stone tables
-2 crescent seated tables (chess)
-1 crescent stone benches 
-2 stone benches 
-1 camera
-Low lying wall bounding the space"
-46,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,11,None,None,1.3685488,103.8949424,"State-provided
-1 four-seater table, with 3 added stools
-2 two-seater metal benches
-A clock, 
-Camera facing bicycle racks instead of space
-Build in the middle of large void deck - could be preventing void deck Soccer/sports "
-47,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,20,None,None,1.367559,103.8957511,"Void deck space, 
-State provided 
-No cameras
-2 four seater tables, with 3 added stools each
-1 six seater stone table (old)"
-48,,State-people,Resident's Corner,Yes,Demarcated,Clean,Mixed,15,Present,Present,1.368349,103.8951399,"State-provided? 
+HG-RC-7,,State-people,Resident's Corner,Yes,Demarcated,Clean,Mixed,15,Present,Present,1.368349,103.8951399,"State-provided? 
 Oddly lacking spatial elements that utilise the full space. 
 1 camera 
 2 six-seater stone tables
@@ -285,3 +190,98 @@ Sink and toilet (locked)
 Prams
 Unique fencing (wooden, with an entrance)
 One side of a dual staircase leads into the space (could obstruct other residents who do not use the space, since TV is in the way)"
+HG-SC-1,,State-provided,Study Corner,No,Demarcated,Clean,Fixed,29,None,None,1.3550745,103.8903458,"Study corner
+State -provided
+One staircase leads directly into space (could be obstructive for non-users and users alike) 
+Demarcated by Low Walls 
+Near lift landing
+2 four-seater tables 
+21 chairs/study tables
+No surveillance
+No electrical fans/plugs
+Naturally ventilated "
+HG-V-10,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,2,None,None,1.3633445,103.8931956,"State provided
+Awkward space
+Two concrete stumps, in the middle of the void deck
+Most likely used to obstruct rather than function as a space
+No surveillance 
+No demarcation "
+HG-V-11,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,6,None,None,1.3666795,103.8950443,"State provided space
+Only 1 six-seater table (old)
+Low wall demarcating space. 
+Lift landing CCTV can reach the space"
+HG-V-12,,State-people,Void Deck,No,Semi-demarcated,Semi-clean,Fixed,8,None,Present,1.3666658,103.8952079,"Site office, that may have led to a space being relocated
+Religious ornament (altar found)
+1 six-seater stone table
+1 bench "
+HG-V-13,,State-provided,Void Deck,No,Demarcated,Clean,Fixed,15,None,None,1.3666581,103.8963502,"Non-homogeneous state-provided space
+1 four seater table with 3 added stools, 
+1 wooden bench with bars built in between
+1 six-seater stone table
+No surveillnce"
+HG-V-14,,State-provided,Void Deck,No,Demarcated,Not clean,Fixed,11,None,None,1.3668558,103.8959137,"State provided space 
+1 four-seater table, with added 3 stools. 
+2 wooden benches, but with bars built in between (could speak of homelessness) 
+Wheel chair and pillows found
+No surveillance"
+HG-V-15,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,16,None,Present,1.3686236,103.8944127,"State-provided space beside minimart
+Old style stone tables
+2 crescent seated tables (chess)
+1 crescent stone benches 
+2 stone benches 
+1 camera
+Low lying wall bounding the space"
+HG-V-16,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,11,None,None,1.3685488,103.8949424,"State-provided
+1 four-seater table, with 3 added stools
+2 two-seater metal benches
+A clock, 
+Camera facing bicycle racks instead of space
+Build in the middle of large void deck - could be preventing void deck Soccer/sports "
+HG-V-17,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,20,None,None,1.367559,103.8957511,"Void deck space, 
+State provided 
+No cameras
+2 four seater tables, with 3 added stools each
+1 six seater stone table (old)"
+HG-V-3,,State-people,Void Deck,Yes,Demarcated,Clean,Fixed,12,None,Present,1.3564414,103.8914887,"State provided 
+Near minimart
+2 stone tables, crescent seating
+1 crescent stone bench
+Demarcation by Low wall
+Near lift landing and mail box
+Cctv surveillance "
+HG-V-4,,State-people,Void Deck,Yes,Demarcated,Semi-clean,Fixed,12,None,None,1.3575063,103.8922495,"State provided
+Outside minimart 
+2 stone tables, crescent seating
+One crescent bench 
+Demarcation by Low wall
+A little messy. 
+2 cameras"
+HG-V-5,,State-provided,Void Deck,No,Demarcated,Clean,Fixed,12,None,None,1.3581243,103.8920818,"State-provided
+2 four-seater tables, wall benches
+Demarcated by Low Walls
+No surveillance
+Near mailbox "
+HG-V-6,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,20,None,None,1.3596565,103.8926551,"State provided 
+2 four-seater tables
+4 three-seater benches
+Cameras present 
+Properly demarcated "
+HG-V-7,,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,8,None,None,1.3604673,103.8919306,"State provided 
+
+2 stone tables, crescent seating 
+Cameras present
+Near an outdoor open area "
+HG-V-8,,State-provided,Void Deck,No,Not demarcated,Clean,Fixed,4,None,None,1.3605202,103.8923222,"State provided
+Stone Table obstruction (void deck activities) 
+Seats 4
+No surveillance 
+Yet quite open"
+HG-V-9,,State-people,Void Deck,Semi,Not demarcated,Semi-clean,Mixed,18,None,Present,1.363075,103.8931802,"State provided and people generated
+5 metal benches
+1 four-seater table, with 3 added stools
+1 cabinet with drawers (no lock) 
+Few plastic boxes
+Motorcycle storage. 
+Cleaning corner near water point 
+Table is in range of CCTV at lift landing
+No real proper demarcation of a gathering space. "
