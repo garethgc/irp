@@ -1,5 +1,72 @@
-Title,Note,URL,Comment
-Dropped pin,"Residents corner
+Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon,Remarks,URL
+BD-EC-01,,State-people,Elderly Care,Yes,Semi-demarcated,Clean,Fixed,roughly 30,None,Present,1.3373151,103.9191436,"Senior citizen corner
+State-people
+Ornaments present
+No picture
+Distribution of food
+Has an outdoor area that has chairs and a swing seat
+Void deck area is demarcated
+Outdoor area is not
+Camera present","https://www.google.com/maps/search/1.3373151,103.9191436"
+BD-G-01,,State-people,Garden,No,Demarcated,Clean,Mobile,4,None,None,1.3362838,103.9251498,"Community garden
+State-people
+Demarcated by fence
+Locked
+Relatively organzied
+Two benches near a equipment shed","https://www.google.com/maps/search/1.3362838,103.9251498"
+BD-G-02,,State-people,Garden,No,Not demarcated,Clean,Mobile,4,None,None,1.3373611,103.9234513,"Community garden
+State-people
+No demarcation of space
+There are walkable paths set up in between them, connecting the two blocks
+Plants are semi demarcated into blocks
+Seating is found at a makeshift equipment shed
+No camera ","https://www.google.com/maps/search/1.3373611,103.9234513"
+BD-G-03,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3360173,103.923343,"Community garden
+People generated
+No demarcation 
+Relatively organized
+No cameras or seats","https://www.google.com/maps/search/1.3360173,103.923343"
+BD-G-04,,People-generated,Garden,No,Not demarcated,Clean,Mobile,4,None,Present,1.3353868,103.9237822,"Community garden
+People generated
+No demarcation or seating 
+No cameras 
+Small fences are placed around bunches of plants
+Sheltered area has cabinets
+Calendars and ornament (Chinese) can be found 
+Movable chairs and tables can be found (wooden and plastic)
+Incense burner as well ","https://www.google.com/maps/search/1.3353868,103.9237822"
+BD-G-05,,People-generated,Garden,Yes,Not demarcated,Clean,None,0,None,Present,1.3368911,103.9203714,"Community garden
+People generated
+No demarcation
+Relatively organized and clean
+Camera present
+Some of the plants are chained may have theft cases before 
+Pots are ornamental
+Could be the Hawkers found in the nearby Coffeeshop 
+No seating ","https://www.google.com/maps/search/1.3368911,103.9203714"
+BD-G-06,,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3374197,103.9192519,"Community garden
+State-people
+Demarcated by fence
+Locked
+Relatively organized 
+No seating ","https://www.google.com/maps/search/1.3374197,103.9192519"
+BD-O-01,,People-generated,Outdoor,Yes,Not demarcated,Clean,Mixed,4,None,None,1.3355672,103.9241289,"Outdoor
+People generated
+Garden with a sofa seat and wooden chairs provided in teh space
+Camera is from lift landing
+Not demarcated 
+Relatively organized ","https://www.google.com/maps/search/1.3355672,103.9241289"
+BD-O-02,,People-generated,Outdoor,No,Not demarcated,Semi-clean,Mobile,5,None,Present,1.3352303,103.9230275,"Semi outdoor seating area
+People-generated
+Chairs found within the area, 5 movable chairs
+1 table provided
+A religious altar present under a tree
+Pots stacked on TOP one another
+No demarcation of space
+No camera
+Behind lift landing
+Relatively disorganized ","https://www.google.com/maps/search/1.3352303,103.9230275"
+BD-RC-01,,State-people,Resident's Corner,Yes,Semi-demarcated,Semi-clean,Mixed,34,Present,Present,1.3371801,103.9285341,"Residents corner
 State-people
 Semi demarcated, Low Walls in the main corner, but furniture has extended beyond this space
 1 six seater table fixed
@@ -16,75 +83,8 @@ Makeshift Basketball hoop present
 Mini pantry can be found
 A little messy
 Camera present 
-","https://www.google.com/maps/search/1.3371801,103.9285341",
-Dropped pin,"Community garden
-State-people
-Demarcated by fence
-Locked
-Relatively organzied
-Two benches near a equipment shed","https://www.google.com/maps/search/1.3362838,103.9251498",
-Dropped pin,"Community garden
-State-people
-No demarcation of space
-There are walkable paths set up in between them, connecting the two blocks
-Plants are semi demarcated into blocks
-Seating is found at a makeshift equipment shed
-No camera ","https://www.google.com/maps/search/1.3373611,103.9234513",
-Dropped pin,"Community garden
-People generated
-No demarcation 
-Relatively organized
-No cameras or seats","https://www.google.com/maps/search/1.3360173,103.923343",
-Dropped pin,"Outdoor
-People generated
-Garden with a sofa seat and wooden chairs provided in teh space
-Camera is from lift landing
-Not demarcated 
-Relatively organized ","https://www.google.com/maps/search/1.3355672,103.9241289",
-Dropped pin,"Community garden
-People generated
-No demarcation or seating 
-No cameras 
-Small fences are placed around bunches of plants
-Sheltered area has cabinets
-Calendars and ornament (Chinese) can be found 
-Movable chairs and tables can be found (wooden and plastic)
-Incense burner as well ","https://www.google.com/maps/search/1.3353868,103.9237822",
-Dropped pin,"Semi outdoor seating area
-People-generated
-Chairs found within the area, 5 movable chairs
-1 table provided
-A religious altar present under a tree
-Pots stacked on TOP one another
-No demarcation of space
-No camera
-Behind lift landing
-Relatively disorganized ","https://www.google.com/maps/search/1.3352303,103.9230275",
-Dropped pin,"Community garden
-People generated
-No demarcation
-Relatively organized and clean
-Camera present
-Some of the plants are chained may have theft cases before 
-Pots are ornamental
-Could be the Hawkers found in the nearby Coffeeshop 
-No seating ","https://www.google.com/maps/search/1.3368911,103.9203714",
-Dropped pin,"Senior citizen corner
-State-people
-Ornaments present
-No picture
-Distribution of food
-Has an outdoor area that has chairs and a swing seat
-Void deck area is demarcated
-Outdoor area is not
-Camera present","https://www.google.com/maps/search/1.3373151,103.9191436",
-Dropped pin,"Community garden
-State-people
-Demarcated by fence
-Locked
-Relatively organized 
-No seating ","https://www.google.com/maps/search/1.3374197,103.9192519",
-Dropped pin,"Residents corner
+","https://www.google.com/maps/search/1.3371801,103.9285341"
+BD-RC-02,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,20,None,None,1.3367101,103.9185153,"Residents corner
 State-provided
 Demarcated by a sign and Low Walls
 A large void space (suspicious)
@@ -92,12 +92,12 @@ A large void space (suspicious)
 6 two seater benches separated by hand bars
 Two toilets
 Clean
-But suspiciously large void area","https://www.google.com/maps/search/1.3367101,103.9185153",
-Dropped pin,"Study corner
+But suspiciously large void area","https://www.google.com/maps/search/1.3367101,103.9185153"
+BD-SC-01,,State-provided,Study Corner,No,Demarcated,Semi-clean,Fixed,33,None,None,1.3363461,103.9190488,"Study corner
 State provided
 Demarcated by a sign and Low Walls
 21 single seats with tables
 1 four seater table
 8 individual seats
 No cameras
-Quite dirty","https://www.google.com/maps/search/1.3363461,103.9190488",
+Quite dirty","https://www.google.com/maps/search/1.3363461,103.9190488"
