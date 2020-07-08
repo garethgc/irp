@@ -1,27 +1,5 @@
 Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon,Remarks
-Dropped pin,"People generated space
-First floor units
-Seating provided two benches
-Leading to garden 
-No demarcation
-Relatively organised
-No cameras
-Relatively clean ",People-generated,Outdoor,,,,,,,,1.3765536,103.8885725,
-Dropped pin,"Garden stretch 
-People generated
-First floor units
-Ornaments religious present
-No demarcation 
-No cameras
-No seating",People-generated,Garden,,,,,,,,1.3765663,103.888138,
-Dropped pin,"People generated garden
-First floor unit
-No demarcation 
-Relatively organised 
-Clean
-No camera
-Small fence ",People-generated,Garden,,,,,,,,1.3754699,103.8880387,
-Dropped pin,"Punggol Acacia senior citizen centre
+HG-EC-03,,State-provided,Elderly Care,Yes,Semi-demarcated,Clean,Mixed,More than 30,Present,Present,1.3753875,103.8870795,"Punggol Acacia senior citizen centre
 State provided
 Some people generation? 
 Near community garden (state-provided)
@@ -37,8 +15,8 @@ Chinese ornaments and decorations present
 Freezer present
 Notices as wel
 Lighting and fans provided
-Clean ",State-provided,Elderly Care,,,,,,,,1.3753875,103.8870795,
-Dropped pin,"Elder citizen corner
+Clean "
+HG-EC-04,,State-provided,Elderly Care,Yes,Demarcated,Not clean,Fixed,22,Present,None,1.3754642,103.8859184,"Elder citizen corner
 State provided
 4 four seater table
 3 metal benches
@@ -48,8 +26,22 @@ Fans provided
 Toilet provided
 Camera present
 Dirty
-Near provision shops",State-provided,Elderly Care,,,,,,,,1.3754642,103.8859184,
-Dropped pin,"Community garden stretch 
+Near provision shops"
+HG-G-47,,People-generated,Garden,No,Not demarcated,Semi-clean,None,0,None,Present,1.3765663,103.888138,"Garden stretch 
+People generated
+First floor units
+Ornaments religious present
+No demarcation 
+No cameras
+No seating"
+HG-G-48,,People-generated,Garden,No,Semi-demarcated,Clean,None,0,None,None,1.3754699,103.8880387,"People generated garden
+First floor unit
+No demarcation 
+Relatively organised 
+Clean
+No camera
+Small fence "
+HG-G-49,,People-generated,Garden,No,Not demarcated,Clean,None,0,Present,Present,1.376383,103.8850122,"Community garden stretch 
 People generated 
 Low blocks
 Relatively disorganized
@@ -60,8 +52,75 @@ No camera
 No seating
 Near a playground (stone linkway)
 Has shelving too
-",People-generated,Garden,,,,,,,,1.376383,103.8850122,
-Dropped pin,"Stretch of garden
+"
+HG-G-50,,People-generated,Garden,No,Not demarcated,Not clean,None,0,None,None,1.3770104,103.8861397,"Garden stretch 
+People generated
+Messy
+No seating provided
+No demarcation 
+Probably nearest residents
+No camera"
+HG-G-51,,People-generated,Garden,No,Not demarcated,Clean,Mobile,5,None,None,1.3770305,103.8859322,"Community garden stretch 
+People generated
+No demarcation
+No camera
+Seating provided (2 seater bench)
+Multiple plastic stools stacked
+Relatively disorganized 
+Clean"
+HG-G-52,,State-people,Garden,No,Demarcated,Clean,Mobile,4,None,None,1.3768958,103.885271,"Community garden
+State-people
+Demarcated by fence
+Locked
+Relatively organised
+No cameras
+Seating provided under tentage
+Clean "
+HG-G-53,,People-generated,Garden,No,Not demarcated,Semi-clean,Mobile,10,None,None,1.3782747,103.8869642,"People generated
+Small garden taken over by storage
+Multiple dust bins and chairs are stored in the open
+Clothes racks as well
+Could indicate a space that is packed up "
+HG-G-54,,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3778534,103.889871,"Community garden
+State-people
+High fenced
+Organised
+Locked
+Demarcated
+Clean
+"
+HG-G-55,,State-people,Garden,No,Demarcated,Semi-clean,None,0,None,None,1.3794016,103.8898522,"Community garden
+State-people
+Relatively organised
+Not as abundant as other gardens
+Demarcated a d locked
+Relatively clean
+Slightly overgrown as compared to other gardens"
+HG-G-56,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,Present,1.3801963,103.89032,"People generated
+Garden stretches
+No demarcation 
+Low blocks
+Disorganized 
+No cameras
+Have swing seats
+Kept relatively clean"
+HG-G-57,,People-generated,Garden,No,Not demarcated,Semi-clean,None,0,None,None,1.3775601,103.8921938,"Large community garden
+People generated space
+Semi-organised
+No demarcation 
+No cameras
+No seating
+Very kampung ish vibe
+No ornaments or seats"
+HG-O-14,,People-generated,Outdoor,No,Not demarcated,Semi-clean,Mobile,4,None,None,1.3765536,103.8885725,"People generated space
+First floor units
+Seating provided two benches
+Leading to garden 
+No demarcation
+Relatively organised
+No cameras
+Relatively clean "
+HG-O-15,,People-generated,Outdoor,No,Not demarcated,Clean,None,0,None,Present,1.376628,103.8866963,"Stretch of garden
 People generated
 No photo yet
 Mostly direct units
@@ -69,31 +128,8 @@ Ornament present
 Relatively disorganized
 Has a few bird cages too 
 No demarcation 
-Clean ",People-generated,Outdoor,,,,,,,,1.376628,103.8866963,
-Dropped pin,"Garden stretch 
-People generated
-Messy
-No seating provided
-No demarcation 
-Probably nearest residents
-No camera",People-generated,Garden,,,,,,,,1.3770104,103.8861397,
-Dropped pin,"Community garden stretch 
-People generated
-No demarcation
-No camera
-Seating provided (2 seater bench)
-Multiple plastic stools stacked
-Relatively disorganized 
-Clean",People-generated,Garden,,,,,,,,1.3770305,103.8859322,
-Dropped pin,"Community garden
-State-people
-Demarcated by fence
-Locked
-Relatively organised
-No cameras
-Seating provided under tentage
-Clean ",State-people,Garden,,,,,,,,1.3768958,103.885271,
-Dropped pin,"Residents corner
+Clean "
+HG-RC-13,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,17,Present,None,1.376565,103.885204,"Residents corner
 State provided
 Very empty space
 Wall benches, in built separation
@@ -102,13 +138,8 @@ Has tv provision
 Has toilet
 Demarcated by walls
 Dull colours
-No camera",State-provided,Resident's Corner,,,,,,,,1.376565,103.885204,
-Dropped pin,"People generated
-Small garden taken over by storage
-Multiple dust bins and chairs are stored in the open
-Clothes racks as well
-Could indicate a space that is packed up ",People-generated,Garden,,,,,,,,1.3782747,103.8869642,
-Dropped pin,"Residents corner
+No camera"
+HG-RC-14,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,26,Present,None,1.3782244,103.8875301,"Residents corner
 State provided
 Demarcated by Low Walls
 Have tv and fan provision
@@ -122,16 +153,8 @@ Vending machine present
 Low walls provide seating, with handle bars dividing it into portions
 Homelessness may be an issue
 Clean
-",State-provided,Resident's Corner,,,,,,,,1.3782244,103.8875301,
-Dropped pin,"Community garden
-State-people
-High fenced
-Organised
-Locked
-Demarcated
-Clean
-",State-people,Garden,,,,,,,,1.3778534,103.889871,
-537 Hougang Street 51,"Residents corner
+"
+HG-RC-15,,State-provided,Resident's Corner,Yes,Demarcated,Clean,Fixed,41,Present,None,1.377967,103.889771,"Residents corner
 State provided
 2 five seater tables
 2 four seater chess tables (no backrest)
@@ -143,15 +166,8 @@ Demarcated by Low Walls
 Camera present
 Vending machine present
 Near community garden (state provided)
-Organzied and clean",State-provided,Resident's Corner,,,,,,,,1.377967,103.889771,
-Dropped pin,"Community garden
-State-people
-Relatively organised
-Not as abundant as other gardens
-Demarcated a d locked
-Relatively clean
-Slightly overgrown as compared to other gardens",State-people,Garden,,,,,,,,1.3794016,103.8898522,
-Dropped pin,"Residents corner 555
+Organzied and clean"
+HG-RC-16,,State-provided,Resident's Corner,Yes,Demarcated,Clean,Fixed,32,Present,None,1.3796027,103.8899257,"Residents corner 555
 State provided
 2 five seater tables (concreted)
 2 four seater chess tables (no backrest)
@@ -162,33 +178,16 @@ Toilet provided
 Demarcated by Low wall
 Fans provided
 Camera present 
-Clean ",State-provided,Resident's Corner,,,,,,,,1.3796027,103.8899257,
-Dropped pin,"Residents corner 559
+Clean "
+HG-RC-17,,State-provided,Resident's Corner,Yes,Demarcated,Clean,Fixed,12,Present,None,1.3800652,103.8893456,"Residents corner 559
 2 six seater table
 Camera present
 Demarcated by Low Walls
 Has fan provision
 Possibly tv provision
 Clean
-Has toilet",State-provided,Resident's Corner,,,,,,,,1.3800652,103.8893456,
-559 Hougang Street 51,"Study corner
-State-provided 
-No fans
-No electrical provision
-24 single seats with tables
-11 seats of wall benches
-Demarcated by rails and Low Walls
-Clean
-Hard seat (fixed)",State-provided,Study Corner,,,,,,,,1.380046,103.889576,
-Dropped pin,"People generated
-Garden stretches
-No demarcation 
-Low blocks
-Disorganized 
-No cameras
-Have swing seats
-Kept relatively clean",People-generated,Garden,,,,,,,,1.3801963,103.89032,
-Dropped pin,"Residents corner
+Has toilet"
+HG-RC-18,,State-provided,Resident's Corner,Yes,Demarcated,Clean,Fixed,34,Present,None,1.3790017,103.8921147,"Residents corner
 State provided
 3 five seater tables
 2 four seater tables, no backrest
@@ -201,12 +200,13 @@ Tv provided
 Toilet provided 
 Multiple wall fans
 Relatively clean and organised
-No ornaments",State-provided,Resident's Corner,,,,,,,,1.3790017,103.8921147,
-Dropped pin,"Large community garden
-People generated space
-Semi-organised
-No demarcation 
-No cameras
-No seating
-Very kampung ish vibe
-No ornaments or seats",People-generated,Garden,,,,,,,,1.3775601,103.8921938,
+No ornaments"
+HG-SC-02,,State-provided,Study Corner,Yes,Demarcated,Clean,Fixed,35,None,None,1.380046,103.889576,"Study corner
+State-provided 
+No fans
+No electrical provision
+24 single seats with tables
+11 seats of wall benches
+Demarcated by rails and Low Walls
+Clean
+Hard seat (fixed)"

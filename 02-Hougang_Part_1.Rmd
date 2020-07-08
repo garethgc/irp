@@ -27,6 +27,7 @@ hougangspaces2205<-read_csv(here::here('irpdata/Hougang22052020.csv'))
 hougangspaces0206<-read_csv(here::here('irpdata/Hougang02062020.csv'))
 hougangspaces0506<-read_csv(here::here('irpdata/Hougang05062020.csv'))
 hougangspaces0906<-read.csv(here::here('irpdata/Hougang09062020.csv'))
+hougangspaces1006<-read.csv(here::here('irpdata/Hougang10062020.csv'))
 
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 Hougang<-planning_areas %>% 
@@ -46,12 +47,15 @@ hougangspaces0506<-hougangspaces0506 %>%
   st_as_sf(coords = c('lon', 'lat'))
 hougangspaces0906<-hougangspaces0906 %>% 
   st_as_sf(coords = c('lon', 'lat'))
+hougangspaces1006<-hougangspaces1006 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
 
 st_crs(hougangspaces1905)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(hougangspaces2205)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(hougangspaces0206)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(hougangspaces0506)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(hougangspaces0906)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(hougangspaces1006)<-"+proj=longlat +datum=WGS84 +no_defs"
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
@@ -69,6 +73,8 @@ tm_shape(hougangspaces0206)+
 tm_shape(hougangspaces0506)+
   tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
 tm_shape(hougangspaces0906)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
+tm_shape(hougangspaces1006)+
   tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
 ```
 

@@ -1,20 +1,20 @@
 Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon
-HG-G-1,Dropped pin,People-generated,Garden,No,Not demarcated,Not clean,None,0,None,None,1.3692339,103.8950701
+HG-G-01,Dropped pin,People-generated,Garden,No,Not demarcated,Not clean,None,0,None,None,1.3692339,103.8950701
 HG-G-10,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3700213,103.8982549
 HG-G-11,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3706015,103.8989959
 HG-G-12,Dropped pin,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3716764,103.8992075
 HG-G-13,Dropped pin,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3716764,103.8992075
-HG-G-2,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.370285,103.8966781
-HG-G-3,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3698553,103.8964585
-HG-G-4,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3690197,103.8964874
-HG-G-5,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3668602,103.8988521
-HG-G-6,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3674286,103.8981084
-HG-G-7,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.368394,103.8983213
-HG-G-8,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3682699,103.8982932
-HG-G-9,Dropped pin,State-people,Garden,Yes,Semi-demarcated,Semi-clean,Fixed,2,None,Present,1.369008,103.897516
-HG-O-1,Dropped pin,State-people,Outdoor,No,Not demarcated,Not clean,None,0,None,None,1.3674859,103.8968484
-HG-O-2,Dropped pin,State-people,Outdoor,Yes,Semi-demarcated,Semi-clean,Mixed,20,None,Present,1.366946,103.8969427
-HG-RC-1,Dropped pin,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Fixed,36,Present,None,1.3689111,103.8983884
-HG-RC-2,Dropped pin,State-people,Resident's Corner,Yes,Demarcated,Clean,Mixed,28,Present,Present,1.3725056,103.8991971
-HG-V-1,Dropped pin,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,16,None,None,1.3726497,103.8996852
-HG-V-2,Dropped pin,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,14,None,None,1.3730362,103.8995501
+HG-G-02,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.370285,103.8966781
+HG-G-03,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3698553,103.8964585
+HG-G-04,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3690197,103.8964874
+HG-G-05,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3668602,103.8988521
+HG-G-06,Dropped pin,State-people,Garden,No,Demarcated,Clean,Fixed,2,None,None,1.3674286,103.8981084
+HG-G-07,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.368394,103.8983213
+HG-G-08,Dropped pin,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3682699,103.8982932
+HG-G-09,Dropped pin,State-people,Garden,Yes,Semi-demarcated,Semi-clean,Fixed,2,None,Present,1.369008,103.897516
+HG-O-01,Dropped pin,State-people,Outdoor,No,Not demarcated,Not clean,None,0,None,None,1.3674859,103.8968484
+HG-O-02,Dropped pin,State-people,Outdoor,Yes,Semi-demarcated,Semi-clean,Mixed,20,None,Present,1.366946,103.8969427
+HG-RC-01,Dropped pin,State-people,Resident's Corner,Yes,Semi-demarcated,Clean,Fixed,36,Present,None,1.3689111,103.8983884
+HG-RC-02,Dropped pin,State-people,Resident's Corner,Yes,Demarcated,Clean,Mixed,28,Present,Present,1.3725056,103.8991971
+HG-V-01,Dropped pin,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,16,None,None,1.3726497,103.8996852
+HG-V-02,Dropped pin,State-provided,Void Deck,Yes,Demarcated,Clean,Fixed,14,None,None,1.3730362,103.8995501

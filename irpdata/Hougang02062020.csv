@@ -1,5 +1,211 @@
 Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon,Remarks
-Dropped pin,,State-people,Void Deck,Yes,Demarcated,Semi-clean,,,,,1.3774475,103.8936754,"State-people
+HG-G-28,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3787691,103.8931105,"People generated
+Relatively organzied in rows
+Mostly potted plants
+Non demarcated
+No cameras
+Has materials for watering on site 
+No seating "
+HG-G-29,,State-people,Garden,No,Demarcated,Clean,Mobile,6,None,None,1.3785754,103.8941666,"State-people
+Very large community garden
+Serves entire precinct
+Organised
+Limited entry
+Demarcated 
+Clean 
+Large variety of plants
+Has seating, 3 benches 
+Regular participation required along with internal meetings
+No flowers (requirement)"
+HG-G-30,,People-generated,Garden,Yes,Semi-demarcated,Clean,Mobile,4,None,Present,1.3777495,103.8955379,"People-generated
+Relatively disorganized but clean
+No demarcation (potted plants are used instead)
+1 metal bench and 2 stools for seating
+Camera present though it looks like it’s a resident’s 
+Ornaments present
+No water source
+Resident built stone path within garden "
+HG-G-31,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3776493,103.8953139,"People
+Generated
+Perimeter gardening
+Relatively organised and clean
+No demarcation
+No cameras
+No seating "
+HG-G-32,,State-people,Garden,No,Semi-demarcated,Semi-clean,Mobile,5,None,None,1.3760381,103.8933954,"State-people
+Community garden
+Relatively organised
+Seating provided in the form of plastic stools and concrete Low walls
+Not very clean
+No proper demarcation
+No fence or locks
+No camera
+Water point present. 
+Most of the garden set up by DIY products including gala poles"
+HG-G-33,,State-provided,Garden,No,Demarcated,Semi-clean,None,0,None,None,1.3758376,103.8935694,"State provided
+Community garden
+Demarcated
+Locked
+Large area with variety of plants
+Relatively organised but a little overgrown(could be due to covid)"
+HG-G-34,,People-generated,Garden,No,Not demarcated,Semi-clean,None,0,None,Present,1.3753225,103.8937894,"People-generated gardens
+Small
+Relatively disorganized
+No cameras
+No demarcation 
+Has ornaments 
+Water source for aquatic plants
+Wind vane
+Relatively clean"
+HG-G-35,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3749156,103.8931534,"People generated
+Small gardens potted plants
+No demarcation 
+No seating
+No cameras
+Low level block 
+Relatively organised
+Clean "
+HG-G-36,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3741296,103.8933589,"People generated 
+Small garden
+Disorganized
+No camera
+Clean 
+No demarcation "
+HG-G-37,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3738591,103.8944264,"Small garden 
+People generated
+Organised and clean
+Has a self path cutting through 
+No cameras
+No demarcation "
+HG-G-38,,People-generated,Garden,No,Semi-demarcated,Semi-clean,None,0,None,None,1.3740964,103.8946162,"People generated gardens
+Sparsely distributed 
+Mostly disorganized 
+Semi demarcated
+Not very clean
+No cameras"
+HG-G-39,,People-generated,Garden,No,Not demarcated,Clean,Mobile,2,None,None,1.3745207,103.8961541,"Large garden
+People generated
+Has a pond
+Framing for creeper growth
+Two chairs
+Relatively organised
+Clean
+No demarcation
+No camera"
+HG-G-40,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3749105,103.8963884,"Small garden 
+People generated
+No cameras
+No seating
+Relatively disorganized
+Clean 
+No demarcation "
+HG-G-40,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3747138,103.8951674,"People generated
+No demarcation
+No seating
+No camera 
+Relatively disorganized
+Clean
+Found near main road and bus stop "
+HG-G-41,,People-generated,Garden,No,Not demarcated,Semi-clean,None,0,None,None,1.3745371,103.8952582,"Relatively small garden
+People generated
+No cameras
+Disorganized
+Relatively clean "
+HG-G-42,,People-generated,Garden,No,Semi-demarcated,Clean,Mobile,7,None,Present,1.3738909,103.8957021,"People generated
+Has a fence for demarcation
+Advanced decorated with a mini pond for aquatics
+Has a DIY arch for creepers
+2 wooden benches seating 3 each
+A single chair
+Mini coffee table 
+Ornaments present (some religious)
+Large variety of plants, clean 
+Bird cages
+No cameras
+Should be the nearby residents (Low block) "
+HG-G-43,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3736415,103.8955466,"Garden stretch
+People generated
+Disorganized but clean 
+No demarcation 
+No seating"
+HG-G-44,,People-generated,Garden,No,Semi-demarcated,Clean,Mobile,7,None,Present,1.373826,103.895868,"People-generated garden
+Fences to demarcated 
+No locks
+No camera
+4 stools movable
+1 wooden bench seats 3
+Large green dustbin found inside
+Ornaments present
+Clothes rack present
+Relatively disorganized
+Clean
+Could be the direct resident’s space "
+HG-G-45,,People-generated,Garden,No,Not demarcated,Semi-clean,None,0,None,None,1.3732212,103.8965048,"People generated garden (small)
+Disorganized 
+Relatively clean
+No cameras 
+No proper demarcation (just some bricks)
+Not as visible as others, as topography blocks most of angles to see it
+Plants are young which could mean it’s a new space
+"
+HG-G-46,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3723541,103.8965222,"People-generated stretch 
+Garden outside first floor homes 
+No seating, however the standard HDB Low Walls could be used as seating 
+No actual demarcation
+Clean, though a little disorganized 
+No camera"
+HG-RC-08,,State-provided,Resident's Corner,Yes,Demarcated,Not clean,Fixed,20,None,None,1.3772035,103.8933981,"Residents corner
+State provided
+4 two seater benches fixed
+2 six seater tables fixed
+Camera present
+Large open area in between (feels empty)
+Space demarcated by Low Walls 
+Litter present 
+"
+HG-RC-09,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,34,None,None,1.3771143,103.8956917,"State provided
+Residents corner
+Fixed seating 
+4 chess tables l, 3 four seater, 1 three seater
+3 side wall benches seating two each 
+One random mobile plastic chair
+Demarcated by Low Walls 
+No camera "
+HG-RC-10,,State-people,Resident's Corner,Yes,Demarcated,Clean,Mixed,Check,Present,Present,1.3762248,103.8940502,"State-people
+Residents corner 
+Tv provided 
+Plastic chairs stacked 
+Fixed tables present 
+Need to revisit
+Demarcated by Low Walls
+Have cameras
+People still sitting inside during phase 1"
+HG-RC-11,,State-provided,Resident's Corner,Yes,Semi-demarcated,Clean,Mixed,40,Present,None,1.37475,103.8942001,"State-provided
+A certain extent of people generated
+Large Residents corner
+Demarcated by Low Walls and rails, however, some seating exists outside the space
+2 four seater tables
+1 three seater table
+2 two seater tables
+2 four seater chess tables
+14 red chairs
+Tv shuttered
+Toilet provided
+Vending machine nearby
+Camera present
+Near residents committee
+One metal bench outside space
+One wooden comforter chair outside space"
+HG-RC-12,,State-provided,Resident's Corner,Yes,Demarcated,Clean,Fixed,10,Present,None,1.375247,103.896379,"Residents corner
+Demarcated by Low Walls
+Relatively empty
+10 single blue seats fixed
+Tv shuttered
+Toilet provided
+Sink provided 
+Camera present
+Clean"
+HG-V-18,,State-people,Void Deck,Yes,Not demarcated,Semi-clean,Mixed,24,Present,Present,1.3774475,103.8936754,"State-people
 Fixed 6 seater table
 13 plastics chairs
 1 large Lounge sofa
@@ -16,16 +222,7 @@ Residents were found using the space during phase 1
 No demarcation of space
 Relatively clean 
 Disorganized"
-Dropped pin,,State-provided,Resident's Corner,Yes,Demarcated,Not clean,,,,,1.3772035,103.8933981,"Residents corner
-State provided
-4 two seater benches fixed
-2 six seater tables fixed
-Camera present
-Large open area in between (feels empty)
-Space demarcated by Low Walls 
-Litter present 
-"
-439 Hougang Ave 6,,People-generated,Void Deck,No,Not demarcated,Clean,,,,,1.37863,103.893073,"People generated
+HG-V-19,,People-generated,Void Deck,No,Not demarcated,Clean,Mixed,5,None,None,1.37863,103.893073,"People generated
 Two fixed benches
 Foldable table
 1 plastic chair
@@ -35,57 +232,7 @@ Non demarcated
 Clean
 Relatively organised 
 N"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3787691,103.8931105,"People generated?
-Relatively organzied in rows
-Mostly potted plants
-Non demarcated
-No cameras
-Has materials for watering on site 
-No seating "
-Dropped pin,,State-people,Garden,No,Demarcated,Clean,,,,,1.3785754,103.8941666,"State-people
-Very large community garden
-Serves entire precinct
-Organised
-Limited entry
-Demarcated 
-Clean 
-Large variety of plants
-Has seating, 3 benches 
-Regular participation required along with internal meetings
-No flowers (requirement)"
-Dropped pin,,People-generated,Garden,Yes,Semi-demarcated,Clean,,,,,1.3777495,103.8955379,"People-generated
-Relatively disorganized but clean
-No demarcation (potted plants are used instead)
-1 metal bench and 2 stools for seating
-Camera present though it looks like it’s a resident’s 
-Ornaments present
-No water source
-Resident built stone path within garden "
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3776493,103.8953139,"People
-Generated
-Perimeter gardening
-Relatively organised and clean
-No demarcation
-No cameras
-No seating "
-Dropped pin,,State-provided,Resident's Corner,No,Demarcated,Clean,,,,,1.3771143,103.8956917,"State provided
-Residents corner
-Fixed seating 
-4 chess tables l, 3 four seater, 1 three seater
-3 side wall benches seating two each 
-One random mobile plastic chair
-Demarcated by Low Walls 
-No camera "
-Dropped pin,,State-people,Resident's Corner,Yes,Demarcated,Clean,,,,,1.3762248,103.8940502,"State-people
-Residents corner 
-Tv provided 
-Plastic chairs stacked 
-Fixed tables present 
-Need to revisit
-Demarcated by Low Walls
-Have cameras
-People still sitting inside during phase 1"
-Dropped pin,,People-generated,Void Deck,No,Not demarcated,Clean,,,,,1.3765646,103.8938011,"People-generated
+HG-V-20,,People-generated,Void Deck,No,Not demarcated,Clean,Mobile,30,None,Present,1.3765646,103.8938011,"People-generated
 Different types of furniture present 
 3 stone tables movable
 3 stone benches movable
@@ -97,140 +244,7 @@ Plants decorated as well
 Near bus stop and lift landing 
 Smoking jar also present 
 State provided exercise equipment nearby"
-Dropped pin,,State-people,Garden,No,Semi-demarcated,Semi-clean,,,,,1.3760381,103.8933954,"State-people
-Community garden
-Relatively organised
-Seating provided in the form of plastic stools and concrete Low walls
-Not very clean
-No proper demarcation
-No fence or locks
-No camera
-Water point present. 
-Most of the garden set up by DIY products including gala poles"
-Dropped pin,,State-provided,Garden,No,Demarcated,Semi-clean,,,,,1.3758376,103.8935694,"State provided
-Community garden
-Demarcated
-Locked
-Large area with variety of plants
-Relatively organised but a little overgrown(could be due to covid)"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Semi-clean,,,,,1.3753225,103.8937894,"People-generated gardens
-Small
-Relatively disorganized
-No cameras
-No demarcation 
-Has ornaments 
-Water source for aquatic plants
-Wind vane
-Relatively clean"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3749156,103.8931534,"People generated
-Small gardens potted plants
-No demarcation 
-No seating
-No cameras
-Low level block 
-Relatively organised
-Clean "
-Dropped pin,,State-provided,Resident's Corner,Yes,Semi-demarcated,Clean,,,,,1.37475,103.8942001,"State-provided
-A certain extent of people generated
-Large Residents corner
-Demarcated by Low Walls and rails, however, some seating exists outside the space
-2 four seater tables
-1 three seater table
-2 two seater tables
-2 four seater chess tables
-14 red chairs
-Tv shuttered
-Toilet provided
-Vending machine nearby
-Camera present
-Near residents committee
-One metal bench outside space
-One wooden comforter chair outside space"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3741296,103.8933589,"People generated 
-Small garden
-Disorganized
-No camera
-Clean 
-No demarcation "
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3738591,103.8944264,"Small garden 
-People generated
-Organised and clean
-Has a self path cutting through 
-No cameras
-No demarcation "
-Dropped pin,,People-generated,Garden,No,Semi-demarcated,Semi-clean,,,,,1.3740964,103.8946162,"People generated gardens
-Sparsely distributed 
-Mostly disorganized 
-Semi demarcated
-Not very clean
-No cameras"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3745207,103.8961541,"Large garden
-People generated
-Has a pond
-Framing for creeper growth
-Two chairs
-Relatively organised
-Clean
-No demarcation
-No camera"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3749105,103.8963884,"Small garden 
-People generated
-No cameras
-No seating
-Relatively disorganized
-Clean 
-No demarcation "
-Block 415 HDB Hougang,,State-provided,Resident's Corner,Yes,Demarcated,Clean,,,,,1.375247,103.896379,"Residents corner
-Demarcated by Low Walls
-Relatively empty
-10 single blue seats fixed
-Tv shuttered
-Toilet provided
-Sink provided 
-Camera present
-Clean"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3747138,103.8951674,"People generated
-No demarcation
-No seating
-No camera 
-Relatively disorganized
-Clean
-Found near main road and bus stop "
-Dropped pin,,People-generated,Garden,No,Not demarcated,Semi-clean,,,,,1.3745371,103.8952582,"Relatively small garden
-People generated
-No cameras
-Disorganized
-Relatively clean "
-Dropped pin,,People-generated,Garden,No,Semi-demarcated,Clean,,,,,1.3738909,103.8957021,"People generated
-Has a fence for demarcation
-Advanced decorated with a mini pond for aquatics
-Has a DIY arch for creepers
-2 wooden benches seating 3 each
-A single chair
-Mini coffee table 
-Ornaments present (some religious)
-Large variety of plants, clean 
-Bird cages
-No cameras
-Should be the nearby residents (Low block) "
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3736415,103.8955466,"Garden stretch
-People generated
-Disorganized but clean 
-No demarcation 
-No seating"
-Block 404 HDB Hougang,,People-generated,Garden,No,Semi-demarcated,Clean,,,,,1.373826,103.895868,"People-generated garden
-Fences to demarcated 
-No locks
-No camera
-4 stools movable
-1 wooden bench seats 3
-Large green dustbin found inside
-Ornaments present
-Clothes rack present
-Relatively disorganized
-Clean
-Could be the direct resident’s space "
-Dropped pin,,State-people,Void Deck,Yes,Not demarcated,Clean,,,,,1.3737642,103.8963204,"State-people
+HG-V-21,,State-people,Void Deck,Yes,Not demarcated,Clean,Mixed,10,None,Present,1.3737642,103.8963204,"State-people
 Different forms furniture 
 Fixed 6-seater table
 Foldable chair (wooden) 
@@ -245,21 +259,7 @@ Near lift landings and bicycle racks
 Installation of fans
 No demarcation of space (uses furniture) 
 Clean "
-Dropped pin,,People-generated,Garden,No,Not demarcated,Semi-clean,,,,,1.3732212,103.8965048,"People generated garden (small)
-Disorganized 
-Relatively clean
-No cameras 
-No proper demarcation (just some bricks)
-Not as visible as others, as topography blocks most of angles to see it
-Plants are young which could mean it’s a new space
-"
-Dropped pin,,People-generated,Garden,No,Not demarcated,Clean,,,,,1.3723541,103.8965222,"People-generated stretch 
-Garden outside first floor homes 
-No seating, however the standard HDB Low Walls could be used as seating 
-No actual demarcation
-Clean, though a little disorganized 
-No camera"
-Block 466,,State-provided,Void Deck,No,Demarcated,Clean,,,,,1.372732,103.897132,"State provided space
+HG-V-22,,State-provided,Void Deck,No,Demarcated,Clean,Fixed,24,None,None,1.372732,103.897132,"State provided space
 Demarcated by Low Walls
 Near mailbox, lift landing and drop off
 Painted concrete tables. 
