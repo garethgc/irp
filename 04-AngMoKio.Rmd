@@ -18,10 +18,33 @@ library(extrafont)
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 
+amk3006<-read_csv(here::here('irpdata/Amk30062020.csv'))
+amk0107<-read_csv(here::here('irpdata/Amk01072020.csv'))
+amk0207<-read_csv(here::here('irpdata/Amk02072020.csv'))
+amk0607<-read_csv(here::here('irpdata/Amk06072020.csv'))
+
+
 AngMoKio<-planning_areas %>% 
   filter(PLN_AREA_N=="ANG MO KIO") %>% 
   filter(PLN_AREA_C=="AM") %>% 
   select(-REGION_N,-REGION_C)
+```
+
+
+```{r}
+amk3006<-amk3006 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+amk0107<-amk0107 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+amk0207<-amk0207 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+amk0607<-amk0607 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+
+st_crs(amk3006)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(amk0107)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(amk0207)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(amk0607)<-"+proj=longlat +datum=WGS84 +no_defs"
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
@@ -29,6 +52,15 @@ tmap_mode("view")
 
 tm_shape(AngMoKio)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
-  tm_borders(lty = "longdash")
+  tm_borders(lty = "longdash")+
+tm_shape(amk3006)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7)+
+tm_shape(amk0107)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
+tm_shape(amk0207)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
+tm_shape(amk0607)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
+  
 ```
 

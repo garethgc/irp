@@ -1,0 +1,13 @@
+---
+title: "05 Findings"
+author: "Gareth"
+date: "7/9/2020"
+output: html_document
+---
+
+# Findings and Discussion
+
+This section focuses on the overall look at how people-generated spaces are found within the 3 neighbourhoods as well as the possible forms they take and the functions of the space which are expanded. 
+
+
+
