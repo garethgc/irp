@@ -1,36 +1,73 @@
-Title,Note,URL,Comment
-Dropped pin,"Community garden
+Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon,Remarks,URL
+BD-G-26,,State-people,Garden,No,Demarcated,Semi-clean,None,0,None,None,1.3221517,103.9355078,"Community garden
 State-people
 Demarcated by signages and fences
 Relatively disorganized 
 No cameras
-No seats ","https://www.google.com/maps/search/1.3221517,103.9355078",
-Dropped pin,"Residents corner
-State-people
-No picture because people are within
-Demarcated by Low Walls
-Decoration on the wall
-Clocks 
-3 four seater tables
-7 singles seats
-3 added seats  leaning against the wall
-Cameras present
-Near hawker centre","https://www.google.com/maps/search/1.3207687,103.9350495",
-Dropped pin,"Community garden
+No seats ","https://www.google.com/maps/search/1.3221517,103.9355078"
+BD-G-27,,State-people,Garden,Yes,Demarcated,Clean,None,0,None,None,1.3195982,103.9331806,"Community garden
 State-people
 Demarcated by fence and signages
 Locked
 Cameras in operation
 Organized
-Can’t see any seating inside","https://www.google.com/maps/search/1.3195982,103.9331806",
-Dropped pin,"Outdoor
+Can’t see any seating inside","https://www.google.com/maps/search/1.3195982,103.9331806"
+BD-G-28,,State-people,Garden,No,Demarcated,Clean,Mobile,4,None,None,1.3238715,103.9270531,"Garden
+State-people
+Demarcated by nature
+Relatively organized
+Has a makeshift shelter with tools, tables and a mini pantry
+Can’t be seen from the outside properly
+Large garden ","https://www.google.com/maps/search/1.3238715,103.9270531"
+BD-G-29,,People-generated,Garden,No,Demarcated,Clean,Mobile,4,None,Present,1.3264538,103.9228669,"Garden
+People generated
+First flow household
+Demarcated by small fence
+Relatively organized
+1 four seater stone table 
+Decorations and ornaments present
+No camera","https://www.google.com/maps/search/1.3264538,103.9228669"
+BD-G-30,,People-generated,Garden,No,Demarcated,Clean,None,0,None,None,1.3261263,103.9228625,"Garden
+People generated
+Demarcated (self) 
+Small plot 
+Relatively organized 
+No seating or camera","https://www.google.com/maps/search/1.3261263,103.9228625"
+BD-G-31,,People-generated,Garden,No,Not demarcated,Semi-clean,None,0,None,None,1.3258257,103.9226389,"Garden
+People generated
+Relatively disorganized
+No demarcation
+No camera
+No seating","https://www.google.com/maps/search/1.3258257,103.9226389"
+BD-G-32,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.3244531,103.9210524,"Garden
+People generated
+No demarcation
+Relatively organized
+Pathway set up by floor tiles
+No cameras
+No seats
+First floor residents","https://www.google.com/maps/search/1.3244531,103.9210524"
+BD-G-33,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,Present,1.3257392,103.9204086,"Garden
+People generated
+No demarcation
+Lines the pathway through with pots 
+Organized
+Bird cages present
+No cameras","https://www.google.com/maps/search/1.3257392,103.9204086"
+BD-G-34,,People-generated,Garden,No,Not demarcated,Clean,None,0,None,None,1.325949,103.9202028,"Garden
+People generated
+First floor homes
+No demarcation 
+Quite organized
+Pathway created by resident through concrete tiles","https://www.google.com/maps/search/1.325949,103.9202028"
+BD-O-04,,People-generated,Outdoor,No,Not demarcated,Semi-clean,Mobile,6,None,Present,1.3228629,103.9336202,"Outdoor
 People generated space
 Has cabinets tables and chairs placed outside
 No photo currently
 No demarcation 
 No cameras 
-Near a Coffeeshop ","https://www.google.com/maps/search/1.3228629,103.9336202",
-Dropped pin,"Outdoor
+Near a Coffeeshop ","https://www.google.com/maps/search/1.3228629,103.9336202"
+BD-O-05,,People-generated,Outdoor,No,Not demarcated,Semi-clean,Mixed,16,None,None,1.3227748,103.932947,"Outdoor
 People generated space
 Simple
 2 chairs added
@@ -40,15 +77,8 @@ A cooler box that is chain locked to a state provided bench
 One tabl
 No demarcation
 No cameras 
-","https://www.google.com/maps/search/1.3227748,103.932947",
-Dropped pin,"Garden
-State-people
-Demarcated by nature
-Relatively organized
-Has a makeshift shelter with tools, tables and a mini pantry
-Can’t be seen from the outside properly
-Large garden ","https://www.google.com/maps/search/1.3238715,103.9270531",
-Dropped pin,"Outdoor
+","https://www.google.com/maps/search/1.3227748,103.932947"
+BD-O-06,,People-generated,Outdoor,No,Not demarcated,Clean,Mobile,8,None,Present,1.3251828,103.9264959,"Outdoor
 Small garden plus equipment area
 Chairs stacked
 No demarcation 
@@ -57,8 +87,8 @@ Relatively organised
 Makeshift rack using the tree branch
 The tree may be a fruit tree as seen by the equipment present
 Storage cabinets are present too
-No cameras","https://www.google.com/maps/search/1.3251828,103.9264959",
-Dropped pin,"Outdoor
+No cameras","https://www.google.com/maps/search/1.3251828,103.9264959"
+BD-O-07,,People-generated,Outdoor,No,Not demarcated,Clean,Mobile,4,None,None,1.3255397,103.9256517,"Outdoor
 People generated under a treee
 No demarcation 
 3 foldable tables 
@@ -66,8 +96,19 @@ No demarcation
 Plastic chairs stacked up
 A person was sitting in the space
 No cameras
-Near the Singapore pools","https://www.google.com/maps/search/1.3255397,103.9256517",
-Dropped pin,"Residents corner
+Near the Singapore pools","https://www.google.com/maps/search/1.3255397,103.9256517"
+BD-RC-13,,State-people,Resident's Corner,Yes,Demarcated,Semi-clean,Mixed,22,None,Present,1.3207687,103.9350495,"Residents corner
+State-people
+No picture because people are within
+Demarcated by Low Walls
+Decoration on the wall
+Clocks 
+3 four seater tables
+7 singles seats
+3 added seats  leaning against the wall
+Cameras present
+Near hawker centre","https://www.google.com/maps/search/1.3207687,103.9350495"
+BD-RC-14,,State-people,Resident's Corner,No,Demarcated,Clean,Fixed,18,None,None,1.3269133,103.9225004,"Residents corner
 State-provided
 Tv in cabinet
 Demarcated by Low Walls and signages 
@@ -75,28 +116,31 @@ Demarcated by Low Walls and signages
 4 two seater benches in front of tv 
 5 two seater benches around the space 
 No toilet
-No camera","https://www.google.com/maps/search/1.3269133,103.9225004",
-Dropped pin,"Garden
-People generated
-First flow household
-Demarcated by small fence
-Relatively organized
-1 four seater stone table 
-Decorations and ornaments present
-No camera","https://www.google.com/maps/search/1.3264538,103.9228669",
-Dropped pin,"Garden
-People generated
-Demarcated (self) 
-Small plot 
-Relatively organized 
-No seating or camera","https://www.google.com/maps/search/1.3261263,103.9228625",
-Dropped pin,"Garden
-People generated
-Relatively disorganized
-No demarcation
-No camera
-No seating","https://www.google.com/maps/search/1.3258257,103.9226389",
-Dropped pin,"Interaction corner
+No camera","https://www.google.com/maps/search/1.3269133,103.9225004"
+BD-RC-15,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,8,None,None,1.3285149,103.9200301,"Residents Lounge
+No picture
+Demarcated by Low Walls and signages
+Same as the other lounges/corners
+No cameta","https://www.google.com/maps/search/1.3285149,103.9200301"
+BD-RC-16,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,8,None,None,1.3287428,103.9210195,"Residents lounge/corner
+Demarcated by signage and Low Walls 
+2 four seater tables
+Wall benches on boundary wall 
+No camera","https://www.google.com/maps/search/1.3287428,103.9210195"
+BD-RC-17,,State-provided,Resident's Corner,No,Demarcated,Not clean,Fixed,8,None,None,1.3295127,103.9215717,"Residents lounge/corner
+Demarcated by Low Walls and signages 
+Quite dirty
+Two four seater tables
+Wall seats along boundary walls
+No camera","https://www.google.com/maps/search/1.3295127,103.9215717"
+BD-RC-18,,State-provided,Resident's Corner,No,Demarcated,Clean,Fixed,20,None,None,1.3297222,103.9219385,"Residents corner
+Demarcated by Low Walls and rails 
+Toilet present
+No TV
+Mostly wall seats
+No tables
+Additional fans provided","https://www.google.com/maps/search/1.3297222,103.9219385"
+BD-V-07,,State-people,Void Deck,No,Demarcated,Clean,Fixed,19,None,Present,1.3250051,103.9210778,"Interaction corner
 State provided
 Low walls
 No camera
@@ -104,52 +148,8 @@ Wall mural
 2 four seater tables
 1 three seater tables
 1 two seater table
-3 Wal seats","https://www.google.com/maps/search/1.3250051,103.9210778",
-Dropped pin,"Garden
-People generated
-No demarcation
-Relatively organized
-Pathway set up by floor tiles
-No cameras
-No seats
-First floor residents","https://www.google.com/maps/search/1.3244531,103.9210524",
-Dropped pin,"Garden
-People generated
-No demarcation
-Lines the pathway through with pots 
-Organized
-Bird cages present
-No cameras","https://www.google.com/maps/search/1.3257392,103.9204086",
-Dropped pin,"Garden
-People generated
-First floor homes
-No demarcation 
-Quite organized
-Pathway created by resident through concrete tiles","https://www.google.com/maps/search/1.325949,103.9202028",
-Dropped pin,"Residents Lounge
-No picture
-Demarcated by Low Walls and signages
-Same as the other lounges/corners
-No cameta","https://www.google.com/maps/search/1.3285149,103.9200301",
-Dropped pin,"Residents lounge/corner
-Demarcated by signage and Low Walls 
-2 four seater tables
-Wall benches on boundary wall 
-No camera","https://www.google.com/maps/search/1.3287428,103.9210195",
-Dropped pin,"Residents lounge/corner
-Demarcated by Low Walls and signages 
-Quite dirty
-Two four seater tables
-Wall seats along boundary walls
-No camera","https://www.google.com/maps/search/1.3295127,103.9215717",
-Dropped pin,"Residents corner
-Demarcated by Low Walls and rails 
-Toilet present
-No TV
-Mostly wall seats
-No tables
-Additional fans provided","https://www.google.com/maps/search/1.3297222,103.9219385",
-Dropped pin,"Interaction Corner
+3 Wal seats","https://www.google.com/maps/search/1.3250051,103.9210778"
+BD-V-08,,State-provided,Void Deck,No,Demarcated,Clean,Fixed,30,Present,None,1.3289114,103.924903,"Interaction Corner
 State provided
 Demarcated by Low Walls and rails 
 4 four seater tables
@@ -157,4 +157,4 @@ Demarcated by Low Walls and rails
 Wall benches 
 8 seats in front of TV cabinet
 Toilet provided
-No camera","https://www.google.com/maps/search/1.3289114,103.924903",
+No camera","https://www.google.com/maps/search/1.3289114,103.924903"

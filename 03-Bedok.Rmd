@@ -21,9 +21,9 @@ library(extrafont)
 bedokspaces1606<-read_csv(here::here('irpdata/Bedok16062020.csv'))
 bedokspaces1906<-read_csv(here::here('irpdata/Bedok19062020.csv'))
 bedokspaces2306<-read_csv(here::here('irpdata/Bedok23062020.csv'))
-# bedokspaces0506<-read_csv(here::here('irpdata/Hougang05062020.csv'))
-# bedokspaces0906<-read.csv(here::here('irpdata/Hougang09062020.csv'))
-# bedokspaces1006<-read.csv(here::here('irpdata/Hougang10062020.csv'))
+bedokspaces2406<-read_csv(here::here('irpdata/Bedok24062020.csv'))
+bedokspaces2606<-read.csv(here::here('irpdata/Bedok26062020.csv'))
+bedokspaces2706<-read.csv(here::here('irpdata/Bedok27062020.csv'))
 
 
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
@@ -40,10 +40,19 @@ bedokspaces1906<-bedokspaces1906 %>%
   st_as_sf(coords = c('lon', 'lat'))
 bedokspaces2306<-bedokspaces2306 %>% 
   st_as_sf(coords = c('lon', 'lat'))
+bedokspaces2406<-bedokspaces2406 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+bedokspaces2606<-bedokspaces2606 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
+bedokspaces2706<-bedokspaces2706 %>% 
+  st_as_sf(coords = c('lon', 'lat'))
 
 st_crs(bedokspaces1606)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(bedokspaces1906)<-"+proj=longlat +datum=WGS84 +no_defs"
 st_crs(bedokspaces2306)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(bedokspaces2406)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(bedokspaces2606)<-"+proj=longlat +datum=WGS84 +no_defs"
+st_crs(bedokspaces2706)<-"+proj=longlat +datum=WGS84 +no_defs"
 
 ```
 
@@ -59,6 +68,12 @@ tm_shape(bedokspaces1606)+
 tm_shape(bedokspaces1906)+
   tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
 tm_shape(bedokspaces2306)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
+tm_shape(bedokspaces2406)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
+tm_shape(bedokspaces2606)+
+  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
+tm_shape(bedokspaces2706)+
   tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
 ```
 

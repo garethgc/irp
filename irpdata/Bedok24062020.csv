@@ -1,13 +1,5 @@
-Title,Note,URL,Comment
-Dropped pin,"No picture
-Void deck
-State-people
-Near mailbox
-No demarcation
-2 metal benches provided by state
-3 additional chairs that are chained up and movable present
-No cameras ","https://www.google.com/maps/search/1.3278586,103.9317192",
-Dropped pin,"Senior citizens corner
+Location ID,Name,Category,Type of Space,Security,Demarcation,Cleanliness,Seating Types,Seating Capacity,Electrical appliances,Ornaments and Decorations,lat,lon,Remarks,URL
+BD-EC-10,,State-people,Elderly Care,Yes,Semi-demarcated,Clean,Mixed,20,Present,Present,1.3297423,103.9336447,"Senior citizens corner
 State-people
 Semi demarcated by Low Walls, signage
 2 fixed tables with one still each and wall benches 
@@ -21,32 +13,40 @@ Tv in cabinet
 2 cameras present
 Additional lighting provided through false ceiling 
 Chinese decorations present
-Floral decoration present","https://www.google.com/maps/search/1.3297423,103.9336447",
-Dropped pin,"Community Garden
+Floral decoration present","https://www.google.com/maps/search/1.3297423,103.9336447"
+BD-G-24,,State-people,Garden,No,Demarcated,Clean,Mobile,4,None,None,1.3293984,103.9332718,"Community Garden
 State-people
 Demarcated by fence
 Seats present at made shift tent
 Relatively organized
 Locked 
-No cameras","https://www.google.com/maps/search/1.3293984,103.9332718",
-Dropped pin,"Open space
+No cameras","https://www.google.com/maps/search/1.3293984,103.9332718"
+BD-G-25,,State-people,Garden,No,Demarcated,Clean,None,0,None,None,1.3269016,103.9270676,"Community Garden
+State-people
+Demarcated by fence
+No visible path though
+Relatively organized 
+No cameras","https://www.google.com/maps/search/1.3269016,103.9270676"
+BD-O-03,,People-generated,Outdoor,No,Demarcated,Clean,Mobile,3,None,None,1.3292107,103.9298272,"Open space
 People-generated
 Chairs taken from Coffeeshop.
 Seems like tables can be set up there too. 
 Sheltered
 Demarcated as a pathway not a central sitting area
-No cameras ","https://www.google.com/maps/search/1.3292107,103.9298272",
-Dropped pin,"Community Garden
-State-people
-Demarcated by fence
-No visible path though
-Relatively organized 
-No cameras","https://www.google.com/maps/search/1.3269016,103.9270676",
-Dropped pin,"Residents Corner
+No cameras ","https://www.google.com/maps/search/1.3292107,103.9298272"
+BD-RC-12,,State-provided,Resident's Corner,Yes,Demarcated,Clean,Fixed,64,None,None,1.3287076,103.9290812,"Residents Corner
 State provided
 Demarcated by Low Walls and fences
 12 four seater tables
 8 two seater benches
 Cameras present
 Vending machines present
-Near resident zone office","https://www.google.com/maps/search/1.3287076,103.9290812",
+Near resident zone office","https://www.google.com/maps/search/1.3287076,103.9290812"
+BD-V-06,,State-people,Void Deck,No,Not demarcated,Clean,Mixed,7,None,None,1.3278586,103.9317192,"No picture
+Void deck
+State-people
+Near mailbox
+No demarcation
+2 metal benches provided by state
+3 additional chairs that are chained up and movable present
+No cameras ","https://www.google.com/maps/search/1.3278586,103.9317192"
