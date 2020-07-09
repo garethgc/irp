@@ -1,0 +1,34 @@
+---
+title: "04-Ang Mo Kio"
+author: "Gareth"
+date: "7/9/2020"
+output: html_document
+---
+
+# Ang Mo Kio
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(extrafont)
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
+
+AngMoKio<-planning_areas %>% 
+  filter(PLN_AREA_N=="ANG MO KIO") %>% 
+  filter(PLN_AREA_C=="AM") %>% 
+  select(-REGION_N,-REGION_C)
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+tmap_mode("view")
+
+tm_shape(AngMoKio)+
+  tm_fill(col = "#E5ECC3",alpha = 0.2)+
+  tm_borders(lty = "longdash")
+```
+
