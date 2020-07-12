@@ -5,13 +5,13 @@ date: "5/20/2020"
 output: github_document
 ---
 
-# Hougang
+# Hougang 
 
-The first neighbourhood for fieldwork, it comprises of a traditionally Teochew Community in the North East. 
+The first neighbourhood for fieldwork, it comprises of a traditionally Teochew Community in the North East. Where it was home to an agricultural lifestyle in the past, it housed relocated residents from those lands during the era of urban development of Singapore. Seen as one of the older estates, the HDB landscape has been retrofitted and upgraded over the years, including the community spaces both indoors and outdoors. 
 
-Some nuances of the neighbourhood:
+A nuance of Hougang is that it has a reputation of being an Opposition stronghold in terms of politics in Singapore. Due to the nature of politics in Singapore, there has been an unproven impression that Hougang would lack the amenities of politically incumbent estates. Throughout the walks across the neighbourhood, starting from the HDB estates along the Serangoon river (north-east), various different forms of community spaces could be seen. Importantly, community gardens along the North East stretch of Hougang were found to be less exclusive in terms of security and accessibility. While community gardens are not indicated in the mapping of people-generated spaces, they pre-empt an impression of the forms of spaces that could be present in this neighbourhood.
 
-- It has been popularised to be the 'opposition stronghold' though it holds multiple political constituencies. However, the term sticks and perpetuates a stereotype of the 'rebellious'  neighbourhood.
+The sub sections below will narrate the routes taken across the neighbourhood of Hougang. In total, it took 6 separate days, due to limitations of accessibility and the physicality of not being able to rest.
 
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
 library(tidyverse)
@@ -20,9 +20,16 @@ library(tmap)
 library(tmaptools)
 library(extrafont)
 library(janitor)
+library(knitr)
 
 ```
 
+
+## Journey through Hougang 
+
+The cataloging route started from the confluence of Upper Serangoon Road and Hougang Ave 7 towards the north-east side of Hougang. As these areas housed mostly older generation of HDB blocks, there were more instances of community gardens that were makeshift and people-generated (I would most likely highlight areas using separate colours). However, they were not devoid of upgrades, as the sheltered paths could be seen through the blocks and parks found in this vicinity. There were a mix of new HDB blocks, recently built during the past 5 years as well as condominiums. The route would eventually lead south, cutting across Tampines Road into Hougang Ave 1, Lorong Ah Soo and Defu. 
+
+The blocks along Hougang St 22 were newer in contrast to the previous vicinity, and it showed more state-provided community spaces. People-generated spaces found here were mostly found along low HDB blocks with first floor units, often developing the front area of their homes with gardens and sitting areas. Whether these spaces were accessible to all, it is unknown. Closer to the Hainanese Food Market, there were more state-provided community spaces. Interestingly, additional elements have been added to these spaces, giving them a more personalised feel.  
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 hougangspaces1905<-read_csv(here::here('irpdata/Hougang19052020.csv'))
 hougangspaces2205<-read_csv(here::here('irpdata/Hougang22052020.csv'))
@@ -45,7 +52,6 @@ Hougang<-planning_areas %>%
   select(-REGION_N,-REGION_C)
 
 ```
-
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 hgpart1<-merge(hougangspaces1905,hougangspaces2205,all.x = TRUE,all.y = TRUE) 
@@ -90,8 +96,6 @@ Hg_peoplegenerated_VO<-Hg_peoplegenerated %>%
   filter(!type_of_space=='Garden')
 ```
 
-
-
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
 
@@ -99,11 +103,30 @@ tm_shape(Hougang)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
 tm_shape(Hg_peoplegenerated_VO)+
-  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)+
+tm_shape(hgpart1)+
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)+
+  tm_layout(title = "Interactive map of people-generated spaces found in Hougang. Mouseover for the location tag of the space. Click for more details on the space. Images of the spaces can be found below.")
+```
+
+There are seven people-generated spaces found within Hougang, specifically towards outdoor and void deck spaces. 
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 3.1: (Left, HG-V-19) Corner of the void deck space, where residents have added a small storage area for materials of a nearby garden, with movable furniture. (Right, HG-V-20) Well-furnished space in a void deck near a bus stop, with a mix of elements in furniture and the presence of Chinese decorations and religious ornaments"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang Photos/HG_V_19b.png")
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang Photos/HG_V_20.png")
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 3.2: (Left, HG-O-14) A bench placed at the void deck, facing towards a garden. Positioned outside the first floor. (Right, HG-V-24) Wooden seating and cabinets can be found in the space, placed outside the state-provided community space, closer to a minimart."}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang Photos/HG_O_14.png")
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang Photos/HG-V-24.png")
 ```
 
 
 
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="Figure 3.3: (Left, HG-O-5) A resident with a first floor table set up with chairs towards the back along a sheltered walkway "}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang Photos/HG_O_5.png")
+```
 
 
 
