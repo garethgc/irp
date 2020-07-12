@@ -19,6 +19,8 @@ library(sf)
 library(tmap)
 library(tmaptools)
 library(extrafont)
+library(janitor)
+
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
@@ -29,34 +31,66 @@ hougangspaces0506<-read_csv(here::here('irpdata/Hougang05062020.csv'))
 hougangspaces0906<-read.csv(here::here('irpdata/Hougang09062020.csv'))
 hougangspaces1006<-read.csv(here::here('irpdata/Hougang10062020.csv'))
 
+hougangspaces1905<-clean_names(hougangspaces1905)
+hougangspaces2205<-clean_names(hougangspaces2205)
+hougangspaces0206<-clean_names(hougangspaces0206)
+hougangspaces0506<-clean_names(hougangspaces0506)
+hougangspaces0906<-clean_names(hougangspaces0906)
+hougangspaces1006<-clean_names(hougangspaces1006)
+
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 Hougang<-planning_areas %>% 
   filter(PLN_AREA_N=="HOUGANG") %>% 
   filter(PLN_AREA_C=="HG") %>% 
   select(-REGION_N,-REGION_C)
+
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+hgpart1<-merge(hougangspaces1905,hougangspaces2205,all.x = TRUE,all.y = TRUE) 
+hgpart1<-merge(hgpart1,hougangspaces0206,all.x = TRUE,all.y = TRUE)
+hgpart1<-merge(hgpart1,hougangspaces0506,all.x = TRUE,all.y = TRUE)
+hgpart1<-merge(hgpart1,hougangspaces0906,all.x = TRUE,all.y = TRUE)
+hgpart1<-merge(hgpart1,hougangspaces1006,all.x = TRUE,all.y = TRUE)
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
-hougangspaces1905<-hougangspaces1905 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-hougangspaces2205<-hougangspaces2205 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-hougangspaces0206<-hougangspaces0206 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-hougangspaces0506<-hougangspaces0506 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-hougangspaces0906<-hougangspaces0906 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-hougangspaces1006<-hougangspaces1006 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
+# hougangspaces1905<-hougangspaces1905 %>%  ##old code
+#   st_as_sf(coords = c('lon', 'lat'))
+# hougangspaces2205<-hougangspaces2205 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# hougangspaces0206<-hougangspaces0206 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# hougangspaces0506<-hougangspaces0506 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# hougangspaces0906<-hougangspaces0906 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# hougangspaces1006<-hougangspaces1006 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# 
+# st_crs(hougangspaces1905)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(hougangspaces2205)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(hougangspaces0206)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(hougangspaces0506)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(hougangspaces0906)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(hougangspaces1006)<-"+proj=longlat +datum=WGS84 +no_defs"
 
-st_crs(hougangspaces1905)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(hougangspaces2205)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(hougangspaces0206)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(hougangspaces0506)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(hougangspaces0906)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(hougangspaces1006)<-"+proj=longlat +datum=WGS84 +no_defs"
+hgpart1<-hgpart1 %>% 
+  st_as_sf(coords=c('lon','lat'))
+
+st_crs(hgpart1)<-"+proj=longlat +datum=WGS84 +no_defs"
 ```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+Hg_peoplegenerated<-hgpart1 %>% 
+  filter(category=='People-generated')
+
+Hg_peoplegenerated_VO<-Hg_peoplegenerated %>% 
+  filter(!type_of_space=='Garden')
+```
+
+
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
@@ -64,18 +98,8 @@ tmap_mode("view")
 tm_shape(Hougang)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
-tm_shape(hougangspaces1905)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7)+
-tm_shape(hougangspaces2205)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
-tm_shape(hougangspaces0206)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
-tm_shape(hougangspaces0506)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
-tm_shape(hougangspaces0906)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
-tm_shape(hougangspaces1006)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
+tm_shape(Hg_peoplegenerated_VO)+
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)
 ```
 
 

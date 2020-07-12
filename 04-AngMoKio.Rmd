@@ -13,6 +13,7 @@ library(sf)
 library(tmap)
 library(tmaptools)
 library(extrafont)
+library(janitor)
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
@@ -23,6 +24,10 @@ amk0107<-read_csv(here::here('irpdata/Amk01072020.csv'))
 amk0207<-read_csv(here::here('irpdata/Amk02072020.csv'))
 amk0607<-read_csv(here::here('irpdata/Amk06072020.csv'))
 
+amk3006<-clean_names(amk3006)
+amk0107<-clean_names(amk0107)
+amk0207<-clean_names(amk0207)
+amk0607<-clean_names(amk0607)
 
 AngMoKio<-planning_areas %>% 
   filter(PLN_AREA_N=="ANG MO KIO") %>% 
@@ -30,21 +35,40 @@ AngMoKio<-planning_areas %>%
   select(-REGION_N,-REGION_C)
 ```
 
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+akpart1<-merge(amk3006,amk0107,all.x = TRUE,all.y = TRUE) 
+akpart1<-merge(akpart1,amk0207,all.x = TRUE,all.y = TRUE)
+akpart1<-merge(akpart1,amk0607,all.x = TRUE,all.y = TRUE)
+```
+
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
-amk3006<-amk3006 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-amk0107<-amk0107 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-amk0207<-amk0207 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
-amk0607<-amk0607 %>% 
-  st_as_sf(coords = c('lon', 'lat'))
+# amk3006<-amk3006 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# amk0107<-amk0107 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# amk0207<-amk0207 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# amk0607<-amk0607 %>% 
+#   st_as_sf(coords = c('lon', 'lat'))
+# 
+# st_crs(amk3006)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(amk0107)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(amk0207)<-"+proj=longlat +datum=WGS84 +no_defs"
+# st_crs(amk0607)<-"+proj=longlat +datum=WGS84 +no_defs"
 
-st_crs(amk3006)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(amk0107)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(amk0207)<-"+proj=longlat +datum=WGS84 +no_defs"
-st_crs(amk0607)<-"+proj=longlat +datum=WGS84 +no_defs"
+akpart1<-akpart1 %>% 
+   st_as_sf(coords = c('lon', 'lat'))
+
+st_crs(akpart1)<-"+proj=longlat +datum=WGS84 +no_defs"
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+Ak_peoplegenerated<-akpart1 %>% 
+  filter(category=='People-generated')
+
+Ak_peoplegenerated_VO<-Ak_peoplegenerated %>% 
+  filter(!type_of_space=='Garden')
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
@@ -53,14 +77,8 @@ tmap_mode("view")
 tm_shape(AngMoKio)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
-tm_shape(amk3006)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7)+
-tm_shape(amk0107)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
-tm_shape(amk0207)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)+
-tm_shape(amk0607)+
-  tm_symbols(size = 0.02, col= "Category", alpha=0.7,legend.col.show = FALSE)
+tm_shape(Ak_peoplegenerated_VO)+
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)
   
 ```
 
