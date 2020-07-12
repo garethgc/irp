@@ -112,20 +112,20 @@ tm_shape(hgpart1)+
 There are seven people-generated spaces found within Hougang, specifically towards outdoor and void deck spaces. 
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 3.1: (Left, HG-V-19) Corner of the void deck space, where residents have added a small storage area for materials of a nearby garden, with movable furniture. (Right, HG-V-20) Well-furnished space in a void deck near a bus stop, with a mix of elements in furniture and the presence of Chinese decorations and religious ornaments"}
-include_graphics("/Users/garethconceicao/Desktop/Hougang Photos/Hougang People Generated/HG_V_19b.png")
-include_graphics("/Users/garethconceicao/Desktop/Hougang Photos/Hougang People Generated/HG_V_20.png")
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_19b.png",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_20.png",dpi = 72)
 ```
 
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 3.2: (Left, HG-O-14) A bench placed at the void deck, facing towards a garden. Positioned outside the first floor. (Right, HG-V-24) Wooden seating and cabinets can be found in the space, placed outside the state-provided community space, closer to a minimart."}
-include_graphics("/Users/garethconceicao/Desktop/Hougang Photos/Hougang People Generated/HG_O_14.png")
-include_graphics("/Users/garethconceicao/Desktop/Hougang Photos/Hougang People Generated/HG-V-24.png")
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_O_14.png",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG-V-24.png",dpi = 72)
 ```
 
 
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="Figure 3.3: (Left, HG-O-5) A resident with a first floor table set up with chairs towards the back along a sheltered walkway "}
-include_graphics("/Users/garethconceicao/Desktop/Hougang Photos/Hougang People Generated/HG_O_5.png")
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_O_5.png",dpi = 72)
 ```
 
 
