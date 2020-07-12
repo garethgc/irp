@@ -108,3 +108,25 @@ include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/ir
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_02.jpg",dpi = 72)
 ```
 
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 4.2: (Left, BD_O_06) Stacked chairs with a makeshift storage area and hanging tools by the tree with a potted garden nearby creates an expansive and invested space by the residents (Right, BD_O_07) Foldable tables and chairs set up under a tree, with a resident enjoying his time. A sitting spot for potential betters at the Singapore Pools"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_06.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_07.jpg",dpi = 72)
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 4.3: (Left, BD_O_03) Chairs are pulled away from the adjacent coffeeshop to a nearby shelter instead of using the wall benches. A shelter from the heat of the day but turning a large space into a significantly smaller one (Right, BD_O_04) Another spot adjacent to a coffeeshop seeing high traffic across paths to get to the coffeeshop. With cabinets, tables and chairs, it extends the interaction from the coffeeshop to a more smoke-friendly location"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_03.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_04.jpg",dpi = 72)
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 4.4: (Left, BD_O_05) Rattan chairs are placed in a random manner, with a cooler box bicycle-locked to a bench. Possible drinking and smoking space due to the nearby coffeeshop and the skewness of the furniture towards outdoors."}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_05.jpg",dpi = 72)
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 4.5: (Left, BD_V_03) Wooden and plastic chairs arranged nicely along the wall, for a much larger gathering than the intended 6-seater provided table. Chinese decorations hung around with a clock nearby, giving an impression of a space where people passed the time. (Right, BD_V_09) More seating provided through wooden and plastic chairs beside a minimart space, with rags and containers (unseen in the photo) 'decorating' the area."}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_V_03.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_V_09.jpg",dpi = 72)
+```
+
