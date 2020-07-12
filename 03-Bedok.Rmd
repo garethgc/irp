@@ -15,6 +15,7 @@ library(tmap)
 library(tmaptools)
 library(extrafont)
 library(janitor)
+library(knitr)
 ```
 
 
@@ -95,5 +96,15 @@ tm_shape(Bedok)+
   tm_borders(lty = "longdash")+
 tm_shape(Bd_peoplegenerated_VO)+
   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)
+```
+
+## Images of the Spaces
+
+There are nine people-generated spaces found in Bedok. 
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 4.1: (Left, BD_O_01)Adjacent sitting area to a lift landing where a sofa seat and wooden chairs have been provided, overlooking a small garden patch. (Right, BD_O_02) Plastic chairs provided to a similar location as the left image, with a small religious altar and garden found just behind the lift landing"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_01.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_02.jpg",dpi = 72)
 ```
 
