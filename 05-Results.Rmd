@@ -9,7 +9,25 @@ output: html_document
 
 This section focuses on the overall look at how people-generated spaces are found within the 3 neighbourhoods as well as the possible forms they take and the functions of the space which are expanded. 
 
-Cataloging of the spaces required characteristics that could bind the different forms of people-generated spaces into logical groups. Since diversity of these spaces would result in difficulties in grouping such spaces, the research focuses instead on the degree of spatial intervention made by residents to these spaces.. Two logical groups are hence formed, being simple and advanced. The "simple" group looks at the contributions of users within the space which increased the capabilities of the space but does not modify the functions of what the space was intended to be. For example, the addition of chairs and generic tables increase the capacity of a void deck seating area but does not add a new activity or function of the seating space. Spaces within the 'advanced' group have interventions that modifies the functions of the provided space according to the needs to the users. For example, the provision of fridges and pantries to a void deck space no longer just provides a simple seating space, but also provides more elements of 'stay' just as food and beverage consumption. 
+Cataloging of the spaces required characteristics that could bind the different forms of people-generated spaces into logical groups. Since diversity of these spaces would result in difficulties in grouping such spaces, the research focuses instead on the degree of spatial interventions made by residents to these spaces.. Two logical groups are hence formed, being _simple_ and _advanced_. The **simple** group looks at the contributions of users within the space which increased the capabilities of the space but does not modify the functions of what the space was intended to be. For example, the addition of chairs and generic tables increase the capacity of a void deck seating area but does not add a new activity or function of the seating space. Spaces within the **advanced** group have interventions that modifies the functions of the provided space according to the needs to the users. For example, the provision of fridges and pantries to a void deck space no longer just provides a simple seating space, but also provides more elements of 'stay' just as food and beverage consumption. 
+
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(extrafont)
+library(janitor)
+library(knitr)
+```
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspaces.csv'))
+```
+
+
+
 
 
 

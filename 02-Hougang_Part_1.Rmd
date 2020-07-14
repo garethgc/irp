@@ -127,7 +127,7 @@ include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/ir
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
-saveRDS(Hg_peoplegenerated_VO,here::here('irpdata/HougangPeopleGenerated.csv'))
+saveRDS(Hg_peoplegenerated_VO,here::here('irpdata/HougangPeopleGenerated.rds'))
 ```
 
 
