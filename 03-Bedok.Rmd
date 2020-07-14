@@ -130,3 +130,9 @@ include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/ir
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_V_09.jpg",dpi = 72)
 ```
 
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+saveRDS(Bd_peoplegenerated_VO,here::here('irpdata/BedokPeopleGenerated.rds'))
+```
+
+

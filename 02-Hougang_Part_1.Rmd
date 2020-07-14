@@ -126,6 +126,9 @@ include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/ir
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_O_5.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+saveRDS(Hg_peoplegenerated_VO,here::here('irpdata/HougangPeopleGenerated.csv'))
+```
 
 
 

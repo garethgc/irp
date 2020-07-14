@@ -115,3 +115,8 @@ include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/ir
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_03.jpg",dpi = 72)
 ```
 
+
+```{r message=FALSE,echo=FALSE,warning=FALSE}
+saveRDS(Ak_peoplegenerated_VO,here::here('irpdata/AmkPeopleGenerated.rds'))
+```
+
