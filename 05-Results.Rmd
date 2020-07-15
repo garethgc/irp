@@ -42,6 +42,8 @@ PGS_nongardens %>%
 
 Of the 26 people-generated spaces that are discovered, 21 fall under the **simple** category while 5 fall under the **advanced** categories. Majority of these spaces are considered simple as they add simple items that do not modify the space much, which includes additional chairs and tables, and do not necessarily change the function of the space. AK-0-03 is an example of such a space. 
 
+## Simple People-generated Spaces
+
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_06.jpg",dpi = 72)
 ```
@@ -53,7 +55,7 @@ Simple01<-PGS_nongardens %>%
   select(Remarks)
 
 kable(Simple01,col.names = "A seating area with a view") %>% 
-  column_spec(1:1,width = 5)
+  column_spec(1:1,width = 5,background = "#F6DDCC ")
 ```
 
 The formation of **simple** people-generated spaces does not necessarily translate to a lack of seating capacity of the space, but it also could imply the orientation of the current seats do not fit the preferences of residents using the space. The spaces listed below show a capacity of seats provided that is deemed sufficient and not an extraordinary amount of additional furniture being added. However, they do have a nice viewing range of the surrounding area which the state-provided seats do not capture, and hance, in the context of activities such as people-watching, encourage people to instead provide their own seating preferences.
@@ -71,8 +73,27 @@ AK_V_02
 AK_O_02
 
 
+Some spaces do postulate a lack of provision by the state, though it is not necessarily a case of insufficiency but the nature of how the communities that create these spaces gather. An example would be AK_O_01, which is situated at the back of a coffeeshop. 
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_01.jpg",dpi = 72)
+```
+
+```{r}
+Simple02<-PGS_nongardens %>% 
+  filter(`Location ID`=="AK-O-01") %>% 
+  select(Remarks)
+
+kable(Simple02,col.names = "A quiet space behind a coffeeshop") %>% 
+  column_spec(1:1,width = 5,background = "#F6DDCC ")
+```
+
+It is not common to have community spaces directly behind the kitchens of a coffeeshop due to the fumes and the lack of nice view. However, these areas serve a different form of community; the staff working at the shops. They may not be able to travel far to other community spaces amidst their breaks and if they would want to enjoy a certain peace, the rear of a coffeeshop where no one walks is a good place to set up a space. The visibility of the space allows the users a short getaway from the bustle in front of them, while keeping them close enough to react to any duties they need to attend. It is also worth noting that AK-O-01 has a mini garden that is probably tended to by the staff, as a community garden set up by the state can be found barely 10 metres away from this space. As community gardens often have exclusive access, this space tends to allow the staff, who would not be residents, to have a space of their own. There are other spaces that too follow such trends, being close to amenities but in locations where it would not be most favourable for development in theory.
+
+AK_O_02
+BD_O_04
+BD_O_07
 
 
-
-
+## Advanced People-generated Spaces
 
