@@ -7,9 +7,13 @@ output: html_document
 
 # Findings and Discussion
 
-This section focuses on the overall look at how people-generated spaces are found within the 3 neighbourhoods as well as the possible forms they take and the functions of the space which are expanded. 
+This section focuses on the overall look at how people-generated spaces are found within the three neighbourhoods as well as the possible forms they take and the functions of the space which are expanded. 
 
-Cataloging of the spaces required characteristics that could bind the different forms of people-generated spaces into logical groups. Since diversity of these spaces would result in difficulties in grouping such spaces, the research focuses instead on the degree of spatial interventions made by residents to these spaces.. Two logical groups are hence formed, being _simple_ and _advanced_. The **simple** group looks at the contributions of users within the space which increased the capabilities of the space but does not modify the functions of what the space was intended to be. For example, the addition of chairs and generic tables increase the capacity of a void deck seating area but does not add a new activity or function of the seating space. Spaces within the **advanced** group have interventions that modifies the functions of the provided space according to the needs to the users. For example, the provision of fridges and pantries to a void deck space no longer just provides a simple seating space, but also provides more elements of 'stay' just as food and beverage consumption. 
+Cataloging of the spaces required characteristics that could bind the different forms of people-generated spaces into logical groups. Since diversity of these spaces would result in difficulties in grouping such spaces, the research focuses instead on the degree of spatial interventions made by residents to these spaces.. Two logical groups are hence formed, being _simple_ and _advanced_. 
+
+The **simple** group looks at the contributions of users within the space which increased the capabilities of the space but does not modify the functions of what the space was intended to be. For example, the addition of chairs and generic tables increase the capacity of a void deck seating area but does not add a new activity or function of the seating space. 
+
+Spaces within the **advanced** group have interventions that modifies the functions of the provided space according to the needs to the users. For example, the provision of fridges and pantries to a void deck space no longer just provides a simple seating space, but also provides more elements of 'stay' with food and beverage consumption. 
 
 
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
@@ -20,14 +24,51 @@ library(tmaptools)
 library(extrafont)
 library(janitor)
 library(knitr)
+library(formattable)
+library(kableExtra)
 ```
 
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
-PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspaces.csv'))
+PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
+
+PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Deck")
+
+PGS_nongardens<-PGS_nongardens %>% 
+  select(-URL)
+
+PGS_nongardens %>% 
+  count(Group)
+```
+
+Of the 26 people-generated spaces that are discovered, 21 fall under the **simple** category while 5 fall under the **advanced** categories. Majority of these spaces are considered simple as they add simple items that do not modify the space much, which includes additional chairs and tables, and do not necessarily change the function of the space. AK-0-03 is an example of such a space. 
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_06.jpg",dpi = 72)
 ```
 
 
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+Simple01<-PGS_nongardens %>% 
+  filter(`Location ID`=="AK-V-06") %>% 
+  select(Remarks)
 
+kable(Simple01,col.names = "A seating area with a view") %>% 
+  column_spec(1:1,width = 5)
+```
+
+The formation of **simple** people-generated spaces does not necessarily translate to a lack of seating capacity of the space, but it also could imply the orientation of the current seats do not fit the preferences of residents using the space. The spaces listed below show a capacity of seats provided that is deemed sufficient and not an extraordinary amount of additional furniture being added. However, they do have a nice viewing range of the surrounding area which the state-provided seats do not capture, and hance, in the context of activities such as people-watching, encourage people to instead provide their own seating preferences.
+
+HG_O_14
+HG-V-24
+BD_O_01
+BD_O_02
+BD_O_03
+BD_O_05
+BD_O_07
+BD_O_09
+AK_V_01
+AK_V_02
+AK_O_02
 
 
 
