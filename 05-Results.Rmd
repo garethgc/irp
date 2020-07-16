@@ -37,14 +37,16 @@ PGS_nongardens<-PGS_nongardens %>%
   select(-URL)
 
 PGS_nongardens %>% 
-  count(Group)
+  count(Group) %>% 
+  kable(col.names = c("Category of People-Generated Spaces", "Number")) %>% 
+  column_spec(1:2, width = 1)
 ```
 
 Of the 26 people-generated spaces that are discovered, 21 fall under the **simple** category while 5 fall under the **advanced** categories. Majority of these spaces are considered simple as they add simple items that do not modify the space much, which includes additional chairs and tables, and do not necessarily change the function of the space. AK-0-03 is an example of such a space. 
 
 ## Simple People-generated Spaces
 
-```{r message=FALSE,echo=FALSE, warning=FALSE}
+```{r message=FALSE,echo=FALSE, warning=FALSE, fig.align='center',fig.cap= "AK_V_06 - A small sitting area, currently packed up"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_06.jpg",dpi = 72)
 ```
 
@@ -75,7 +77,7 @@ AK_O_02
 
 Some spaces do postulate a lack of provision by the state, though it is not necessarily a case of insufficiency but the nature of how the communities that create these spaces gather. An example would be AK_O_01, which is situated at the back of a coffeeshop. 
 
-```{r message=FALSE,echo=FALSE, warning=FALSE}
+```{r message=FALSE,echo=FALSE, warning=FALSE, fig.align='center', fig.cap= "AK_O_01 - A space behind a coffeeshop"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_01.jpg",dpi = 72)
 ```
 
@@ -90,10 +92,34 @@ kable(Simple02,col.names = "A quiet space behind a coffeeshop") %>%
 
 It is not common to have community spaces directly behind the kitchens of a coffeeshop due to the fumes and the lack of nice view. However, these areas serve a different form of community; the staff working at the shops. They may not be able to travel far to other community spaces amidst their breaks and if they would want to enjoy a certain peace, the rear of a coffeeshop where no one walks is a good place to set up a space. The visibility of the space allows the users a short getaway from the bustle in front of them, while keeping them close enough to react to any duties they need to attend. It is also worth noting that AK-O-01 has a mini garden that is probably tended to by the staff, as a community garden set up by the state can be found barely 10 metres away from this space. As community gardens often have exclusive access, this space tends to allow the staff, who would not be residents, to have a space of their own. There are other spaces that too follow such trends, being close to amenities but in locations where it would not be most favourable for development in theory.
 
-AK_O_02
-BD_O_04
-BD_O_07
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '33%', fig.show='asis',fig.align='center', fig.cap= "(Left to Right) AK_O_02, BD_O_04, BD_O_07"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_02.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_04.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_07.jpg",dpi = 72)
+```
+
 
 
 ## Advanced People-generated Spaces
 
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '75%', fig.show='asis',fig.align='center', fig.cap= "BD_O_06, an advanced people-generated space that creates a work and sitting area to cater to the nearby garden and fruit tree"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_06.jpg",dpi = 72)
+```
+
+The five **advanced** people-generated spaces found in the three neighbourhoods have increased the functions of the spaces of which they were originally designed. Extending beyond the provision of additional flexibility in sitting or people-watching activities as well as increasing load of the space, their modifications are reactive to the environment that they are set within. The people-generated space of **BD_O_06** is formed around a tree which has no prior state provided elements. The evolution of functions within the space can be seen with the potted garden that has grown within it, equipment storage that serve both stewardship of the garden and the tree as well as multiple chairs just for seating. Nearby HDB blocks house provision shops and a hardware store, and this space creates a sense of activity that is not unlike the amenities found in close proximity.
+
+(Insert a map of surrounding vicinity and this space)
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '75%', fig.show='asis',fig.align='center', fig.cap= "AK_V_05, an advanced people-generated space that creates a living space at a void deck, full a range of electrical appliances for multiple conveniences"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_05.jpg",dpi = 72)
+```
+
+
+**AK_V_05** is an interesting relocated space. Initially, due to a construction hoarding nearby, it was not clear what this space entailed. Upon further investigation through Google Street View, the makeshift store was constructed to house the items from the ongoing renovation of the senior citizens corner. The layout of the relocated furniture, which have been provided by residents, resembles that of a gathering space, with lighting provided for reading as if it were in a normal HDB unit. While unique that it has electrical power sources, due to the relocation, resident's choosing which furniture and appliances to leave in the open is an impression for the activities that take place in this space. A cross-trainer exercise machine can be found in the corner, with natural draft coming in from that direction. The heterogeneity of elements within this space speaks about the contributions of the residents into developing this living space or even the previous senior citizen corner; diverse yet centralised on comfort to their preference. 
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '75%', fig.show='asis',fig.align='center', fig.cap= "HG_V_20, an advanced people-generated space that has a strong cultural and old school vibe with the types of furniture and ornaments present"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_20.jpg",dpi = 72)
+```
+
+**HG_V_20** is a unique people-generated space found in a void deck.
