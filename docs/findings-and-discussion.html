@@ -49,6 +49,16 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
@@ -144,7 +154,7 @@ Simple
 <p>Of the 26 people-generated spaces that are discovered, 21 fall under the <strong>simple</strong> category while 5 fall under the <strong>advanced</strong> categories. Majority of these spaces are considered simple as they add simple items that do not modify the space much, which includes additional chairs and tables, and do not necessarily change the function of the space. AK-0-03 is an example of such a space.</p>
 <div id="simple-people-generated-spaces" class="section level2">
 <h2><span class="header-section-number">6.1</span> Simple People-generated Spaces</h2>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-41"></span>
 <img src="irpdata/Amk%20People%20Generated/AK_V_06.jpg" alt="AK_V_06 - A small sitting area, currently packed up" width="5376" />
 <p class="caption">
 Figure 6.1: AK_V_06 - A small sitting area, currently packed up
@@ -179,7 +189,7 @@ AK_V_01
 AK_V_02
 AK_O_02</p>
 <p>Some spaces do postulate a lack of provision by the state, though it is not necessarily a case of insufficiency but the nature of how the communities that create these spaces gather. An example would be AK_O_01, which is situated at the back of a coffeeshop.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-43"></span>
 <img src="irpdata/Amk%20People%20Generated/AK_O_01.jpg" alt="AK_O_01 - A space behind a coffeeshop" width="5376" />
 <p class="caption">
 Figure 6.2: AK_O_01 - A space behind a coffeeshop
@@ -202,19 +212,19 @@ An outdoor space found just behind a coffeeshop. Non-sheltered, users have set u
 </tbody>
 </table>
 <p>It is not common to have community spaces directly behind the kitchens of a coffeeshop due to the fumes and the lack of nice view. However, these areas serve a different form of community; the staff working at the shops. They may not be able to travel far to other community spaces amidst their breaks and if they would want to enjoy a certain peace, the rear of a coffeeshop where no one walks is a good place to set up a space. The visibility of the space allows the users a short getaway from the bustle in front of them, while keeping them close enough to react to any duties they need to attend. It is also worth noting that AK-O-01 has a mini garden that is probably tended to by the staff, as a community garden set up by the state can be found barely 10 metres away from this space. As community gardens often have exclusive access, this space tends to allow the staff, who would not be residents, to have a space of their own. There are other spaces that too follow such trends, being close to amenities but in locations where it would not be most favourable for development in theory.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-71"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-451"></span>
 <img src="irpdata/Amk%20People%20Generated/AK_O_02.jpg" alt="(Left to Right) AK_O_02, BD_O_04, BD_O_07" width="33%" />
 <p class="caption">
 Figure 6.3: (Left to Right) AK_O_02, BD_O_04, BD_O_07
 </p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-72"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-452"></span>
 <img src="irpdata/Bedok%20People%20Generated/BD_O_04.jpg" alt="(Left to Right) AK_O_02, BD_O_04, BD_O_07" width="33%" />
 <p class="caption">
 Figure 6.4: (Left to Right) AK_O_02, BD_O_04, BD_O_07
 </p>
 </div>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-73"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-453"></span>
 <img src="irpdata/Bedok%20People%20Generated/BD_O_07.jpg" alt="(Left to Right) AK_O_02, BD_O_04, BD_O_07" width="33%" />
 <p class="caption">
 Figure 6.5: (Left to Right) AK_O_02, BD_O_04, BD_O_07
@@ -223,7 +233,7 @@ Figure 6.5: (Left to Right) AK_O_02, BD_O_04, BD_O_07
 </div>
 <div id="advanced-people-generated-spaces" class="section level2">
 <h2><span class="header-section-number">6.2</span> Advanced People-generated Spaces</h2>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-8"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-46"></span>
 <img src="irpdata/Bedok%20People%20Generated/BD_O_06.jpg" alt="BD_O_06, an advanced people-generated space that creates a work and sitting area to cater to the nearby garden and fruit tree" width="75%" />
 <p class="caption">
 Figure 6.6: BD_O_06, an advanced people-generated space that creates a work and sitting area to cater to the nearby garden and fruit tree
@@ -231,14 +241,14 @@ Figure 6.6: BD_O_06, an advanced people-generated space that creates a work and 
 </div>
 <p>The five <strong>advanced</strong> people-generated spaces found in the three neighbourhoods have increased the functions of the spaces of which they were originally designed. Extending beyond the provision of additional flexibility in sitting or people-watching activities as well as increasing load of the space, their modifications are reactive to the environment that they are set within. The people-generated space of <strong>BD_O_06</strong> is formed around a tree which has no prior state provided elements. The evolution of functions within the space can be seen with the potted garden that has grown within it, equipment storage that serve both stewardship of the garden and the tree as well as multiple chairs just for seating. Nearby HDB blocks house provision shops and a hardware store, and this space creates a sense of activity that is not unlike the amenities found in close proximity.</p>
 <p>(Insert a map of surrounding vicinity and this space)</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-9"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-47"></span>
 <img src="irpdata/Amk%20People%20Generated/AK_V_05.jpg" alt="AK_V_05, an advanced people-generated space that creates a living space at a void deck, full a range of electrical appliances for multiple conveniences" width="75%" />
 <p class="caption">
 Figure 6.7: AK_V_05, an advanced people-generated space that creates a living space at a void deck, full a range of electrical appliances for multiple conveniences
 </p>
 </div>
 <p><strong>AK_V_05</strong> is an interesting relocated space. Initially, due to a construction hoarding nearby, it was not clear what this space entailed. Upon further investigation through Google Street View, the makeshift store was constructed to house the items from the ongoing renovation of the senior citizens corner. The layout of the relocated furniture, which have been provided by residents, resembles that of a gathering space, with lighting provided for reading as if it were in a normal HDB unit. While unique that it has electrical power sources, due to the relocation, resident’s choosing which furniture and appliances to leave in the open is an impression for the activities that take place in this space. A cross-trainer exercise machine can be found in the corner, with natural draft coming in from that direction. The heterogeneity of elements within this space speaks about the contributions of the residents into developing this living space or even the previous senior citizen corner; diverse yet centralised on comfort to their preference.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-10"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-48"></span>
 <img src="irpdata/Hougang%20People%20Generated/HG_V_20.jpg" alt="HG_V_20, an advanced people-generated space that has a strong cultural and old school vibe with the types of furniture and ornaments present" width="75%" />
 <p class="caption">
 Figure 6.8: HG_V_20, an advanced people-generated space that has a strong cultural and old school vibe with the types of furniture and ornaments present
