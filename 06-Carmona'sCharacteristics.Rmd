@@ -1,0 +1,35 @@
+---
+title: "06-Carmona' characteristics"
+author: "Gareth"
+date: "7/17/2020"
+output: html_document
+---
+
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+library(tidyverse)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(extrafont)
+library(janitor)
+library(knitr)
+library(formattable)
+library(kableExtra)
+```
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
+
+PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Deck")
+
+PGS_nongardens<-PGS_nongardens %>% 
+  select(-URL)
+```
+
+# Carmona's Characteristics
+
+Further analysis of people-generated spaces are looked through characteristics that have been modified from Carmona’s Public Space Design (2019) and Peterman's establishment of community spaces (2000). The characteristics help to serve as themes of discussion on what the forms that people-generated spaces undertake and in turn, what would need to be further understood. The characteristics are as follows: _diversity_, _free_, _delineated_, _balance accessibility_, _comfort_, _adequacy of seating_.
+
+Diversity focuses on the level of heterogeneity within the people-generated spaces. This can be derived from two main observations; the types of spatial elements present in the space and the presence of state-provided elements. 
+
