@@ -81,7 +81,7 @@ Some spaces do postulate a lack of provision by the state, though it is not nece
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_01.jpg",dpi = 72)
 ```
 
-```{r}
+```{r message=FALSE,echo=FALSE, warning=FALSE}
 Simple02<-PGS_nongardens %>% 
   filter(`Location ID`=="AK-O-01") %>% 
   select(Remarks)
