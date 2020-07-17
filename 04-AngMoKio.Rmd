@@ -79,7 +79,7 @@ tm_shape(AngMoKio)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
 tm_shape(Ak_peoplegenerated_VO)+
-  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Accent",n=2, title.col = "Type of Space")
   
 ```
 
@@ -89,28 +89,28 @@ Ang Mo Kio has ten people-generated spaces across the neighbourhood.
 ## Images of the Spaces
 
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 5.1: (Left, AK_V_01) Plastic chairs stacked and chained to the metal benches to provide flexible seating around the pillars that obstruct each bench. (Right, AK_V_02) Chairs and drawers containers plastic cups and bottles placed at a common void deck, adjacent to sheltered walkway connecting the blocks"}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_01) Plastic chairs stacked and chained to the metal benches to provide flexible seating around the pillars that obstruct each bench. (Right, AK_V_02) Chairs and drawers containers plastic cups and bottles placed at a common void deck, adjacent to sheltered walkway connecting the blocks"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_01.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_02.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 5.2: (Left, AK_V_05) A living space erupts at a void deck beside a barricaded store. Fridges that draw power provision from the store with the complementing furniture provided, gives a rather personalised space of interaction. (Right, AK_V_06) Chairs stack in all manners at this vantage space, where sheltered walkways meet, going to adjacent blocks and across the two coffeeshops found nearby"}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_05) A living space erupts at a void deck beside a barricaded store. Fridges that draw power provision from the store with the complementing furniture provided, gives a rather personalised space of interaction. (Right, AK_V_06) Chairs stack in all manners at this vantage space, where sheltered walkways meet, going to adjacent blocks and across the two coffeeshops found nearby"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_05.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_06.jpg",dpi = 72)
 ```
 
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 5.3: (Left, AK_V_07) A table tennis table attempts to hide the wooden chairs that hang around it. (Right, AK_V_09) A myriad of different furniture placed in a rather non-orderly manner impresses a buzz in the vicinity, especially since the block where basic neighbourhood functions are provided is found across it"}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_07) A table tennis table attempts to hide the wooden chairs that hang around it. (Right, AK_V_09) A myriad of different furniture placed in a rather non-orderly manner impresses a buzz in the vicinity, especially since the block where basic neighbourhood functions are provided is found across it"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_07.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_09.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 5.4: (Left, AK_V_12) A hidden corner serving the utility rooms of the block provides shade and a small smoking corner for its users. (Right, AK_O_01) Hidden behind the famous chicken rice franchise lies a gathering corner with varying types of seats available and a potted environment for privacy"}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_12) A hidden corner serving the utility rooms of the block provides shade and a small smoking corner for its users. (Right, AK_O_01) Hidden behind the famous chicken rice franchise lies a gathering corner with varying types of seats available and a potted environment for privacy"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_12.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_01.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" Figure 5.5: (Left, AK_O_02) Stacks of wooden benches give evidence of a popular outdoor space adjacent to a coffeeshop and the lorry park nearby. (Right, AK_O_03) Additional chairs and a dustbin give residents more flexibility in using this shelter that overlooks the nearby food centre and a small community garden beside it"}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_O_02) Stacks of wooden benches give evidence of a popular outdoor space adjacent to a coffeeshop and the lorry park nearby. (Right, AK_O_03) Additional chairs and a dustbin give residents more flexibility in using this shelter that overlooks the nearby food centre and a small community garden beside it"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_02.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_03.jpg",dpi = 72)
 ```

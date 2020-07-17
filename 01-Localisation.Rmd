@@ -18,7 +18,7 @@ library(extrafont)
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 ```
 
-## 3 Neighbourhoods
+## Three Neighbourhoods
 
 Neighborhoods that are shortlisted for study will be mature HDB estates, developed between the 1960s and the 1970s, as well as estates that hold a large population. Three neighborhoods, Hougang, Ang Mo Kio and Bedok will be chosen for observation. They are chosen not only for their development period, but they also carry a large populace of 180,000 and above while having shared boundaries (City Population, n.d.). Maturity is an important element as it enables better understanding of the interactions and processes in the spaces which may have changed across time while a large living demography enables a better capture and representation for other neighborhoods. As the three mature neighborhoods are found in close proximity to each other, this allows for the study to observe possible spatial ‘spillovers’, whereby spatial distributions and trends are present between neighborhoods. 
 

@@ -103,9 +103,7 @@ tm_shape(Hougang)+
   tm_fill(col = "#E5ECC3",alpha = 0.2)+
   tm_borders(lty = "longdash")+
 tm_shape(Hg_peoplegenerated_VO)+
-  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)+
-tm_shape(hgpart1)+
-  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7)+
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Accent",n=2, title.col = "Type of Space")+
   tm_layout(title = "Interactive map of people-generated spaces found in Hougang. Mouseover for the location tag of the space. Click for more details on the space. Images of the spaces can be found below.")
 ```
 

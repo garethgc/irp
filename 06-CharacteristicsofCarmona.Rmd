@@ -31,6 +31,24 @@ PGS_nongardens<-PGS_nongardens %>%
 
 Further analysis of people-generated spaces are looked through characteristics that have been modified from Carmona’s Public Space Design (2019) and Peterman's establishment of community spaces (2000). The characteristics help to serve as themes of discussion on what the forms that people-generated spaces undertake and in turn, what would need to be further understood. The characteristics are as follows: _diversity_, _free_, _delineated_, _balance accessibility_, _comfort_, _adequacy of seating_.
 
+```{r message=FALSE,echo=FALSE, warning=FALSE,fig.cap="List of simple people-generated spaces across the three neighbourhoods"}
+PGS_nongardens %>%
+  filter(Group=="Simple") %>% 
+  select(-Remarks,-Category,-lat,-lon,-Group) %>% 
+  kable() %>% 
+  kable_styling("striped",font_size = 10)
+```
+
+
+```{r message=FALSE,echo=FALSE, warning=FALSE, fig.cap= "List of advanced people-generated spaces across the three neighbourhoods" }
+PGS_nongardens %>%
+  filter(Group=="Advanced") %>% 
+  select(-Remarks,-Category,-lat,-lon,-Group) %>% 
+  kable() %>% 
+  kable_styling("striped",font_size = 10)
+```
+
+
 ## Diversity
 
 Diversity focuses on the level of heterogeneity within the people-generated spaces. This can be derived from two main observations; the types of spatial elements present in the space and the presence of state-provided elements. 
@@ -44,4 +62,14 @@ Diversity focuses on the level of heterogeneity within the people-generated spac
 ## Comfort
 
 ## Adequacy of Seating
+
+
+### To be moved to Appendix later!
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+PGS_nongardens %>% 
+  select(`Location ID`,`Type of Space`,Remarks) %>% 
+  kable() %>% 
+  kable_styling("striped",font_size = 10)
+```
+
 
