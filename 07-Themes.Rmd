@@ -1,0 +1,10 @@
+---
+title: "Themes"
+author: "Gareth"
+date: "7/24/2020"
+output: html_document
+---
+
+# Themes
+
+Through the analysis of modified characteristics mentioned in the previous section, three main themes can be ascertained from people-generated spaces and their development within HDB estates in Singapore. These are the _preferences versus sufficiency_, _limitations of duty versus personality_ and _privacy vs surveillance_.
