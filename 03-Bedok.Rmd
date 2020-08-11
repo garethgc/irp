@@ -34,12 +34,7 @@ bedokspaces2406<-clean_names(bedokspaces2406)
 bedokspaces2606<-clean_names(bedokspaces2606)
 bedokspaces2706<-clean_names(bedokspaces2706)
 
-
-planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
-Bedok<-planning_areas %>% 
-  filter(PLN_AREA_N=="BEDOK") %>% 
-  filter(PLN_AREA_C=="BD") %>% 
-  select(-REGION_N,-REGION_C)
+Bedok<-read_sf(here::here('irpdata/Bedok.shp'))
 ```
 
 
@@ -91,11 +86,14 @@ Bd_peoplegenerated_VO<-Bd_peoplegenerated %>%
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
 
+tm_basemap(server = "https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=89fe1df0537e47e7b7142d4c505fc868")+
 tm_shape(Bedok)+
-  tm_fill(col = "#E5ECC3",alpha = 0.2)+
+  tm_fill(col = "#638D9C",alpha = 0.5)+
   tm_borders(lty = "longdash")+
 tm_shape(Bd_peoplegenerated_VO)+
-  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Accent",n=2, title.col = "Type of Space")
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Set1",n=2, title.col = "Type of Space")
+# tm_shape(bdpart1)+
+#   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Accent",n=2, title.col = "Type of Space")
 ```
 
 ## Images of the Spaces

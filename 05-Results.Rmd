@@ -5,7 +5,7 @@ date: "7/9/2020"
 output: html_document
 ---
 
-# Findings and Discussion
+# Findings
 
 This section focuses on the overall look at how people-generated spaces are found within the three neighbourhoods as well as the possible forms they take and the functions of the space which are expanded. 
 

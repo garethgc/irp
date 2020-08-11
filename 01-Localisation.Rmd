@@ -28,37 +28,31 @@ studied_areas<- planning_areas %>%
   filter(PLN_AREA_C=="AM"|PLN_AREA_C=="HG"|PLN_AREA_C=="BD") %>% 
   select(-REGION_N,-REGION_C)
 
-Hougang<-planning_areas %>% 
-  filter(PLN_AREA_N=="HOUGANG") %>% 
-  filter(PLN_AREA_C=="HG") %>% 
-  select(-REGION_N,-REGION_C)
+Hougang<-read_sf(here::here('irpdata/Hougang.shp'))
 
-AngMoKio<-planning_areas %>% 
-  filter(PLN_AREA_N=="ANG MO KIO") %>% 
-  filter(PLN_AREA_C=="AM") %>% 
-  select(-REGION_N,-REGION_C)
+AngMoKio<-read_sf(here::here('irpdata/AngMoKio.shp'))
 
-Bedok<-planning_areas %>% 
-  filter(PLN_AREA_N=="BEDOK") %>% 
-  filter(PLN_AREA_C=="BD") %>% 
-  select(-REGION_N,-REGION_C)
+Bedok<-read_sf(here::here('irpdata/Bedok.shp'))
 
 tmap_mode("view")
 ```
 
+
 ```{r message=FALSE,echo=FALSE, warning=FALSE, fig.height=10,fig.width=10}
 
-tm_shape(studied_areas)+
-  tm_borders(lty = "longdash",lwd = 1.4)+
+tm_basemap(server = "https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=89fe1df0537e47e7b7142d4c505fc868")+
   tm_shape(Hougang)+
-  tm_fill("PLN_AREA_N",alpha=0.2,legend.show=FALSE)+
-  tm_text("PLN_AREA_N",size=2)+
+    tm_fill(col = "#B4A0CD",alpha = 0.5)+
+    tm_borders(lty = "longdash")+
+    tm_text("Town",size=2)+
   tm_shape(AngMoKio)+
-  tm_fill("PLN_AREA_N",alpha=0.2,legend.show=FALSE)+
-  tm_text("PLN_AREA_N",size=2)+
+    tm_fill(col = "#CF7F72",alpha = 0.5)+
+    tm_borders(lty = "longdash")+
+    tm_text("Town",size=2)+
   tm_shape(Bedok)+
-  tm_fill("PLN_AREA_N",alpha=0.3,legend.show=FALSE)+
-  tm_text("PLN_AREA_N",size=2)
+    tm_fill(col = "#638D9C",alpha = 0.5)+
+    tm_borders(lty = "longdash")+
+    tm_text("Town",size=2)
 ```
 
 

@@ -21,6 +21,8 @@ library(tmaptools)
 library(extrafont)
 library(janitor)
 library(knitr)
+library(leaflet.providers)
+library(leaflet)
 
 ```
 
@@ -45,13 +47,10 @@ hougangspaces0506<-clean_names(hougangspaces0506)
 hougangspaces0906<-clean_names(hougangspaces0906)
 hougangspaces1006<-clean_names(hougangspaces1006)
 
-planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
-Hougang<-planning_areas %>% 
-  filter(PLN_AREA_N=="HOUGANG") %>% 
-  filter(PLN_AREA_C=="HG") %>% 
-  select(-REGION_N,-REGION_C)
+Hougang<-read_sf(here::here('irpdata/Hougang.shp'))
 
 ```
+
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 hgpart1<-merge(hougangspaces1905,hougangspaces2205,all.x = TRUE,all.y = TRUE) 
@@ -99,11 +98,12 @@ Hg_peoplegenerated_VO<-Hg_peoplegenerated %>%
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
 
+tm_basemap(server = "https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=89fe1df0537e47e7b7142d4c505fc868")+
 tm_shape(Hougang)+
-  tm_fill(col = "#E5ECC3",alpha = 0.2)+
+  tm_fill(col = "#B4A0CD",alpha = 0.5)+
   tm_borders(lty = "longdash")+
 tm_shape(Hg_peoplegenerated_VO)+
-  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Accent",n=2, title.col = "Type of Space")+
+  tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Set1",n=2, title.col = "Type of Space")+
   tm_layout(title = "Interactive map of people-generated spaces found in Hougang. Mouseover for the location tag of the space. Click for more details on the space. Images of the spaces can be found below.")
 ```
 

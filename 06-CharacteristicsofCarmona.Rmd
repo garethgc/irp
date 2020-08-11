@@ -66,10 +66,26 @@ Diversity focuses on the level of heterogeneity within the people-generated spac
 
 ### To be moved to Appendix later!
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
-PGS_nongardens %>% 
-  select(`Location ID`,`Type of Space`,Remarks) %>% 
+PGS_obs<-PGS_nongardens %>% 
+  select(`Location ID`,`Type of Space`,Remarks) 
+
+
+PGS_obs %>% 
   kable() %>% 
   kable_styling("striped",font_size = 10)
+
+```
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+PGS_obs %>% 
+  filter(str_detect(Remarks,paste(c("walkway","pathway"),collapse='|')))
+```
+
+
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+PGS_obs %>% 
+  filter(!str_detect(Remarks,paste(c("walkway","pathway"),collapse='|'))) %>% 
+  filter(str_detect(Remarks,"coffeeshop"))
 ```
 
 
