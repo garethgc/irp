@@ -16,6 +16,8 @@ library(tmaptools)
 library(extrafont)
 library(janitor)
 library(knitr)
+library(formattable)
+library(kableExtra)
 ```
 
 
@@ -92,7 +94,7 @@ tm_shape(Bedok)+
   tm_borders(lty = "longdash")+
 tm_shape(Bd_peoplegenerated_VO)+
   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Set1",n=2, title.col = "Type of Space")+
-  tm_text('location_id',size = 1.1, ymod = 1.2)
+  tm_text('location_id',size = 1.1, ymod = 1.4)
 # tm_layout(fontfamily = "Tahoma")
 
 # tm_shape(bdpart1)+
