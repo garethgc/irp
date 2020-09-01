@@ -23,15 +23,18 @@ library(janitor)
 library(knitr)
 library(leaflet.providers)
 library(leaflet)
+library(formattable)
+library(kableExtra)
 
 ```
 
 
 ## Journey through Hougang 
 
-The cataloging route started from the confluence of Upper Serangoon Road and Hougang Ave 7 towards the north-east side of Hougang. As these areas housed mostly older generation of HDB blocks, there were more instances of community gardens that were makeshift and people-generated (I would most likely highlight areas using separate colours). However, they were not devoid of upgrades, as the sheltered paths could be seen through the blocks and parks found in this vicinity. There were a mix of new HDB blocks, recently built during the past 5 years as well as condominiums. The route would eventually lead south, cutting across Tampines Road into Hougang Ave 1, Lorong Ah Soo and Defu. 
+The cataloging route started from the confluence of Upper Serangoon Road and Hougang Ave 7 towards the north-east side of Hougang. As these areas housed mostly older generation of HDB blocks, there were more instances of community gardens that were makeshift and people-generated. However, they were not devoid of upgrades, as the sheltered paths could be seen through the blocks and parks found in this vicinity. There were a mix of new HDB blocks, recently built during the past 5 years as well as condominiums. The route would eventually lead south, cutting across Tampines Road into Hougang Ave 1, Lorong Ah Soo and Defu. 
 
 The blocks along Hougang St 22 were newer in contrast to the previous vicinity, and it showed more state-provided community spaces. People-generated spaces found here were mostly found along low HDB blocks with first floor units, often developing the front area of their homes with gardens and sitting areas. Whether these spaces were accessible to all, it is unknown. Closer to the Hainanese Food Market, there were more state-provided community spaces. Interestingly, additional elements have been added to these spaces, giving them a more personalised feel.  
+
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 hougangspaces1905<-read_csv(here::here('irpdata/Hougang19052020.csv'))
 hougangspaces2205<-read_csv(here::here('irpdata/Hougang22052020.csv'))
@@ -50,7 +53,6 @@ hougangspaces1006<-clean_names(hougangspaces1006)
 Hougang<-read_sf(here::here('irpdata/Hougang.shp'))
 
 ```
-
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 hgpart1<-merge(hougangspaces1905,hougangspaces2205,all.x = TRUE,all.y = TRUE) 
@@ -93,6 +95,7 @@ Hg_peoplegenerated<-hgpart1 %>%
 
 Hg_peoplegenerated_VO<-Hg_peoplegenerated %>% 
   filter(!type_of_space=='Garden')
+
 ```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
@@ -104,29 +107,97 @@ tm_shape(Hougang)+
   tm_borders(lty = "longdash")+
 tm_shape(Hg_peoplegenerated_VO)+
   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Set1",n=2, title.col = "Type of Space")+
-  tm_layout(title = "Interactive map of people-generated spaces found in Hougang. Mouseover for the location tag of the space. Click for more details on the space. Images of the spaces can be found below.")
+tm_layout(fontfamily = "Tahoma")
 ```
 
-There are seven people-generated spaces found within Hougang, specifically towards outdoor and void deck spaces. 
+There are seven people-generated spaces found within Hougang, four outdoor spaces and three spaces found in void decks. Outdoor spaces are defined as spaecs beyond the boundaries of a HDB block and can be comprised of both sheltered and non-sheltered locations. There were many forms of gardens observed in Hougang, each with its own variety. However, the creation of these spaces are ambiguous; it is not clear if they are initiated by state instruments or the communities themselves. Hence, more conversations  with residents of the gardens are needed to develop a clearer understanding on how they fit within the realm of people-generated spaces.
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, HG-V-19) Corner of the void deck space, where residents have added a small storage area for materials of a nearby garden, with movable furniture. (Right, HG-V-20) Well-furnished space in a void deck near a bus stop, with a mix of elements in furniture and the presence of Chinese decorations and religious ornaments"}
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
+
+PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Deck")
+
+PGS_nongardens<-PGS_nongardens %>% 
+  select(-URL)
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **HG-V-19** - Corner of the void deck space, where residents have added a small storage area for materials of a nearby garden, with movable furniture. (Right) **HG-V-20** - Well-furnished space in a void deck near a bus stop, with a mix of elements in furniture and the presence of Chinese decorations and religious ornaments"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_19b.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_20.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,echo=FALSE, warning=FALSE}
+# PGS_nongardens %>% 
+#   filter(`Location ID`=="HG-V-19") %>% 
+#   select(Remarks) %>%
+#   kable(col.names = "HG-V-19 - Hiding in a corner") %>%
+#   column_spec(1:1,width_min = "3",background = "#F6DDCC ") 
+# 
+# PGS_nongardens %>%
+#   filter(`Location ID`=="HG-V-20") %>%
+#   select(Remarks) %>%
+#   kable(col.names = "HG-V-20 - Culturally standing out") %>%
+#   column_spec(1:1,width = 5,background = "#F6DDCC ")
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, HG-O-14) A bench placed at the void deck, facing towards a garden. Positioned outside the first floor. (Right, HG-V-24) Wooden seating and cabinets can be found in the space, placed outside the state-provided community space, closer to a minimart."}
-include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_O_14.jpg",dpi = 72)
-include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG-V-24.jpg",dpi = 72)
+PGS_nongardens %>%
+  filter(`Location ID`=="HG-V-19"| `Location ID`=="HG-V-20") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("HG-V-19 - Hiding in a corner", "HG-V-20 - Culturally standing out" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, HG-O-5) A resident with a first floor table set up with chairs towards the back along a sheltered walkway "}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **HG-O-14** - A bench placed at the void deck, facing towards a garden. Positioned outside the first floor. (Right) **HG-O-5** - A resident with a first floor table set up with chairs towards the back along a sheltered walkway"}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_O_14.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_O_5.jpg",dpi = 72)
 ```
+
+```{r message=FALSE,echo=FALSE, warning=FALSE, out.width = '50%'}
+# PGS_nongardens %>% 
+#   filter(`Location ID`=="HG-O-14") %>% 
+#   select(Remarks) %>% 
+#   kable(col.names = "HG-O-14 - Viewing the small garden") %>% 
+#   column_spec(1:1,width = 5,background = "#F6DDCC ")
+# 
+# PGS_nongardens %>%
+#   filter(`Location ID`=="HG-O-05") %>%
+#   select(Remarks) %>%
+#   kable(col.names = "HG-O-5 - Backend of a home") %>%
+#   column_spec(1:1,width = 5,background = "#F6DDCC ")
+
+PGS_nongardens %>%
+  filter(`Location ID`=="HG-O-14"| `Location ID`=="HG-O-05") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("HG-O-14 - Viewing the small garden", "HG-O-5 - Backend of a home" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap=" **HG-V-24** - Wooden seating and cabinets placed outside the state-provided community space and closer to a minimart. A lady sits on these added furniture facing the sheltered walkway that connects the nearby blocks together while having a conversation with the mini-mart owner."}
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_24C.jpg",dpi = 72)
+include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_24D.jpg",dpi = 72)
+```
+
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+PGS_nongardens %>% 
+  filter(`Location ID`=="HG-V-24") %>% 
+  select(Remarks) %>% 
+  kable(col.names = "HG-V-24 - A quiet extension of a shop") %>% 
+  column_spec(1:1,width_min = "10cm",background = "#F2E2BC") %>% 
+  row_spec(1,align ='justify' )
+```
+
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 saveRDS(Hg_peoplegenerated_VO,here::here('irpdata/HougangPeopleGenerated.rds'))
 ```
+
 
 
 

@@ -5,7 +5,7 @@ date: "5/19/2020"
 output: github_document
 ---
 
-# Overview
+# The approach to exploring
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 library(tidyverse)
 library(sf)
@@ -18,9 +18,14 @@ library(extrafont)
 planning_areas<-readRDS(here::here("irpdata/planning_areas.rds"))
 ```
 
+## Forms and Narratives
+
+The exploration during this project identifies the forms that people-generated spaces can present themselves in, as well as the different narratives which can be found in the nuances of these spaces. Acknowledging the diversity of these spaces through the understanding of their self-initiation, would breathe more life into the topic of community space development that are found within in Singapore. These spaces could either challenge or support the existing approaches planning bodies have undertaken in order to create community spaces that enliven neighbourhoods. Underlying all these would also give a little insight on the possible motivations on why these spaces exist or how they could be possibly formed.
+
+
 ## Three Neighbourhoods
 
-Neighborhoods that are shortlisted for study will be mature HDB estates, developed between the 1960s and the 1970s, as well as estates that hold a large population. Three neighborhoods, Hougang, Ang Mo Kio and Bedok will be chosen for observation. They are chosen not only for their development period, but they also carry a large populace of 180,000 and above while having shared boundaries (City Population, n.d.). Maturity is an important element as it enables better understanding of the interactions and processes in the spaces which may have changed across time while a large living demography enables a better capture and representation for other neighborhoods. As the three mature neighborhoods are found in close proximity to each other, this allows for the study to observe possible spatial ‘spillovers’, whereby spatial distributions and trends are present between neighborhoods. 
+Neighborhoods that are shortlisted for study will be mature HDB estates, developed between the 1960s and the 1970s, as well as estates that hold a large population. Three neighborhoods, Hougang, Ang Mo Kio and Bedok will be chosen for observation. They are chosen not only for their development period, but they carry a large populace of 180,000 and above while having shared boundaries (City Population, n.d.). Maturity is an important element as it enables better understanding of the interactions and processes in the spaces which may have changed across time while a large living demography enables a better capture and representation for other neighborhoods. 
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 studied_areas<- planning_areas %>% 

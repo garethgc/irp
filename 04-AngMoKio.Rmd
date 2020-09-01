@@ -78,8 +78,13 @@ tm_shape(AngMoKio)+
   tm_borders(lty = "longdash")+
 tm_shape(Ak_peoplegenerated_VO)+
   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Set1",n=2, title.col = "Type of Space")
+#   tm_text('location_id',size = 1.1, ymod = 1.2)+
+# tm_layout(fontfamily = "Tahoma")
 # tm_shape(akpart1)+
 #   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "Accent",n=2, title.col = "Type of Space")
+# tm_shape(Ak_peoplegenerated_VO_specific)+
+#   tm_symbols(size = 0.1, col= "type_of_space", alpha=0.7,perceptual = TRUE,scale = 3,palette = "#377eb8" ,title.col = "Type of Space")+
+#   tm_text('location_id',size = 1.1, ymod = 1.2)
   
 ```
 

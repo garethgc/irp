@@ -42,7 +42,7 @@ PGS_nongardens %>%
   column_spec(1:2, width = 1)
 ```
 
-Of the 26 people-generated spaces that are discovered, 21 fall under the **simple** category while 5 fall under the **advanced** categories. Majority of these spaces are considered simple as they add simple items that do not modify the space much, which includes additional chairs and tables, and do not necessarily change the function of the space. AK-0-03 is an example of such a space. 
+Of the 27 people-generated spaces that are discovered, 21 fall under the **simple** category while 6 fall under the **advanced** categories. Majority of these spaces are considered simple as they add simple items that do not modify the space much, which includes additional chairs and tables, and do not necessarily change the function of the space. AK-0-03 is an example of such a space. 
 
 ## Simple People-generated Spaces
 
