@@ -7,6 +7,7 @@ output: html_document
 
 # Bedok
 
+The second neighbourhood to be explored in this research, Bedok is one of the largest planning neighbourhoods in Singapore, with close to 300,000 residents (Singstat, 2019). It is the fifth neighbourhood to be planned out by the Housing Development Board (HDB) in 1963 and has seen continuous development of the various land parcels with the reclamation of the east coast. Its name is similar to the Malay word _bedoh_, which means "drum", as it was used by mosques as a signal to the settlements for times of prayer (National Library Board, n.d.). Even though it may have significant Malay origins, it is a neighbourhood that has seen much development that perpetuates the multi-cultural society in Singapore. With the quieter areas of Kaki Bukit, the private housing along Bedok reservoir as well as Siglap East and the bustling Bedok Town centre, Bedok is a diverse and amenity-rich neighbourhood. 
 
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
 library(tidyverse)
@@ -19,7 +20,6 @@ library(knitr)
 library(formattable)
 library(kableExtra)
 ```
-
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 bedokspaces1606<-read_csv(here::here('irpdata/Bedok16062020.csv'))
@@ -84,6 +84,13 @@ Bd_peoplegenerated_VO<-Bd_peoplegenerated %>%
   filter(!type_of_space=='Garden')
 ```
 
+## Journey through Bedok
+
+Kaki Bukit, which is the north-western portion of Bedok, was the starting point to search for the people-generated spaces. While further away from the main Bedok hub, it still has its own town centre, found close to most of the HDB blocks. Nevertheless, maybe due to the COVID-19 implementations, there were few instances of people-generated spaces in this area, although some slight nuances require further investigation if this is true (clocks were found hanging at random void deck spaces near coffeeshops). Along the Bedok town park, towards the north,  was found to be more private and people-generated spaces tended to appear, especially gardens that were randomly scattered along HDB pathways. People-generated spaces in this area gave a sense of retreat as they were situated at less visible locations and the outskirts of the HDB estates. 
+
+Chai Chee, a mix of old and new developments west adjacent to the town centre , had interesting outdoor people-generated spaces which developed around seemingly ordinary objects such as trees. Expectedly, the new developments did not have any of these spaces. Fengshan, which is the eastern portion of Bedok and famous for its food, had relatively little people-generated spaces, other than a void deck space and some gardens. South of Bedok also shared this trait, and its people-generated spaces were found closer to watering holes such as coffeeshops. Most of the people-generated spaces were simply developed, with additional furniture found in the spaces. However, there were often strong cultural presences in these spaces, tending towards the Chinese ethnicity.
+
+While Bedok is a large HDB estate, it does not have a exceedingly large amount of void decks as the state bodies have developed amenities in these spaces since the neighbourhood has matured. While this could explain the scarcity in some of the locales in Bedok, it also creates an interesting point in the community's preference for either state-provided spaces or their own people-generated spaces.
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
@@ -103,37 +110,97 @@ tm_shape(Bd_peoplegenerated_VO)+
 
 ## Images of the Spaces
 
-There are nine people-generated spaces found in Bedok. 
+There are **nine** people-generated spaces found in Bedok, comprising of **two** void deck spaces and **eight** outdoor spaces.
 
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, BD_O_01) Adjacent sitting area to a lift landing where a sofa seat and wooden chairs have been provided, overlooking a small garden patch. (Right, BD_O_02) Plastic chairs provided to a similar location as the left image, with a small religious altar and garden found just behind the lift landing"}
+PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Deck")
+
+PGS_nongardens<-PGS_nongardens %>% 
+  select(-URL)
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **BD_O_01** - Adjacent sitting area to a lift landing where a sofa seat and wooden chairs have been provided, overlooking a small garden patch. (Right) **BD_O_02** - Plastic chairs provided to a similar location as the left image, with a small religious altar and garden found just behind the lift landing"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_01.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_02.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="BD-O-01"| `Location ID`=="BD-O-02") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("BD-O-01 - Having a quiet view", "BD-O-02 - Hidden culture" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, BD_O_06) Stacked chairs with a makeshift storage area and hanging tools by the tree with a potted garden nearby creates an expansive and invested space by the residents (Right, BD_O_07) Foldable tables and chairs set up under a tree, with a resident enjoying his time. A sitting spot for potential betters at the Singapore Pools"}
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **BD-O-06** - Stacked chairs with a makeshift storage area and hanging tools by the tree with a potted garden nearby creates an expansive and invested space by the residents (Right) **BD-O-07** - Foldable tables and chairs set up under a tree, with a resident enjoying his time. A sitting spot for potential betters at the Singapore Pools"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_06.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_07.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="BD-O-06"| `Location ID`=="BD-O-07") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("BD-O-6 - Functioning under a tree", "BD-O-07 - Patiently waiting" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, BD_O_03) Chairs are pulled away from the adjacent coffeeshop to a nearby shelter instead of using the wall benches. A shelter from the heat of the day but turning a large space into a significantly smaller one (Right, BD_O_04) Another spot adjacent to a coffeeshop seeing high traffic across paths to get to the coffeeshop. With cabinets, tables and chairs, it extends the interaction from the coffeeshop to a more smoke-friendly location"}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **BD-O-03** - Chairs are pulled away from the adjacent coffeeshop to a nearby shelter instead of using the wall benches. A shelter from the heat of the day but turning a large space into a significantly smaller one (Right) **BD-O-04** - Another spot adjacent to a coffeeshop seeing high traffic across paths to get to the coffeeshop. With cabinets, tables and chairs, it extends the interaction from the coffeeshop to a more smoke-friendly location"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_03.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_04.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="BD-O-03"| `Location ID`=="BD-O-04") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("BD-O-03 - Seeking shelter", "BD-O-04 - Going beyond the coffeeshop" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, BD_O_05) Rattan chairs are placed in a random manner, with a cooler box bicycle-locked to a bench. Possible drinking and smoking space due to the nearby coffeeshop and the skewness of the furniture towards outdoors."}
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **BD-O-05** - Rattan chairs are placed in a random manner, with a cooler box bicycle-locked to a bench. Possible drinking and smoking space due to the nearby coffeeshop and the skewness of the furniture towards outdoors.(Right) **BD-0-08** - A living space that has personal elements hidden around an extended lift lobby. Incense holders, cultural decorations and wooden furniture leading out to the garden provides a sense of retreat."}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_05.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_O_08.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, BD_V_03) Wooden and plastic chairs arranged nicely along the wall, for a much larger gathering than the intended 6-seater provided table. Chinese decorations hung around with a clock nearby, giving an impression of a space where people passed the time. (Right, BD_V_09) More seating provided through wooden and plastic chairs beside a minimart space, with rags and containers (unseen in the photo) 'decorating' the area."}
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="BD-O-05"| `Location ID`=="BD-O-08") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("BD-O-05 - Extending the social space", "BD-O-08 - A retreat away" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **BD-V-03** - Wooden and plastic chairs arranged nicely along the wall, for a much larger gathering than the intended 6-seater provided table. Chinese decorations hung around with a clock nearby, giving an impression of a space where people passed the time. (Right) **BD-V-09** - More seating provided through wooden and plastic chairs beside a minimart space, with rags and containers (unseen in the photo) 'decorating' the area."}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_V_03.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Bedok People Generated/BD_V_09.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="BD-V-03"| `Location ID`=="BD-V-09") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("BD-V-03 - A place to meet", "BD-V-09 - Spending time at the minimart" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 saveRDS(Bd_peoplegenerated_VO,here::here('irpdata/BedokPeopleGenerated.rds'))

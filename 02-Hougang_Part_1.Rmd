@@ -110,7 +110,7 @@ tm_shape(Hg_peoplegenerated_VO)+
 tm_layout(fontfamily = "Tahoma")
 ```
 
-There are seven people-generated spaces found within Hougang, four outdoor spaces and three spaces found in void decks. Outdoor spaces are defined as spaecs beyond the boundaries of a HDB block and can be comprised of both sheltered and non-sheltered locations. There were many forms of gardens observed in Hougang, each with its own variety. However, the creation of these spaces are ambiguous; it is not clear if they are initiated by state instruments or the communities themselves. Hence, more conversations  with residents of the gardens are needed to develop a clearer understanding on how they fit within the realm of people-generated spaces.
+There are **seven** people-generated spaces found within Hougang, comprising of **four** outdoor spaces and **three** spaces found in void decks. Outdoor spaces are defined as spaecs beyond the boundaries of a HDB block and can be comprised of both sheltered and non-sheltered locations. There were many forms of gardens observed in Hougang, each with its own variety. However, the creation of these spaces are ambiguous; it is not clear if they are initiated by state instruments or the communities themselves. Hence, more conversations  with residents of the gardens are needed to develop a clearer understanding on how they fit within the realm of people-generated spaces.
 
 ```{r message=FALSE,warning=FALSE,echo=FALSE}
 PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
@@ -121,6 +121,7 @@ PGS_nongardens<-PGS_nongardens %>%
   select(-URL)
 ```
 
+## Images of the Spaces
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **HG-V-19** - Corner of the void deck space, where residents have added a small storage area for materials of a nearby garden, with movable furniture. (Right) **HG-V-20** - Well-furnished space in a void deck near a bus stop, with a mix of elements in furniture and the presence of Chinese decorations and religious ornaments"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Hougang People Generated/HG_V_19b.jpg",dpi = 72)
