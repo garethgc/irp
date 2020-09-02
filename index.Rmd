@@ -1,5 +1,5 @@
 --- 
-title: "People-generated spaces in neighbourhoods"
+title: "People-generated spaces and their developments in mature HDB estates"
 author: "Gareth Conceicao 1004755"
 site: bookdown::bookdown_site
 documentclass: book
