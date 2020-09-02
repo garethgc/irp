@@ -5,6 +5,7 @@ date: "7/24/2020"
 output: html_document
 ---
 
+# People-generated spaces are...
 
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
 library(tidyverse)
@@ -26,31 +27,21 @@ PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Dec
 
 PGS_nongardens<-PGS_nongardens %>% 
   select(-URL)
+
+# PGS_nongardens %>% 
+#   count(`Seating Types`)
+# 
+# PGS_nongardens %>% 
+#   filter(`Seating Types`=="Mobile")
 ```
 
 
-```{r}
-PGS_nongardens %>% 
-  count(`Seating Types`)
-```
 
 
-```{r}
-PGS_nongardens %>% 
-  filter(`Seating Types`=="Mobile")
-```
-
-# Themes
-
-Through the analysis of modified characteristics mentioned in the previous section, three main themes can be ascertained from people-generated spaces and their development within HDB estates in Singapore. These are the _preferences versus sufficiency_, _limitations of duty versus personality_ and _privacy vs surveillance_.
-
-
-## Preferences versus Sufficiency
-
-The spaces observed in the research displayed an empowerment of residents to build or modify spaces in accordance to various motivations. Unlike other community initiative projects in other countries, whereby there was an insufficiency of amenities provided by the state, people-generated spaces in Singapore tended towards the preference of the residents' on how the the space should be developed. This was clear in spaces with adequate capacity of benches and seats provided by the state but additional chairs were provided for flexible arrangement and seating. 
-
-## Limitations of duty versus Personality
+## ..expressions of nuanced preferences of the community residing in them
 
 
 
-## Privacy versus Surveillance
+
+## ..a bridge between surveillance and privacy of communities 
+
