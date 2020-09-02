@@ -71,6 +71,10 @@ Ak_peoplegenerated_VO<-Ak_peoplegenerated %>%
   filter(!type_of_space=='Garden')
 ```
 
+
+## Journey through Ang Mo Kio
+
+
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
 
@@ -90,38 +94,103 @@ tm_shape(Ak_peoplegenerated_VO)+
   
 ```
 
-Ang Mo Kio has ten people-generated spaces across the neighbourhood.
+Ang Mo Kio has **ten** people-generated spaces comprising of **three** outdoor spaces and **seven** void deck spaces.
 
 
 ## Images of the Spaces
 
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_01) Plastic chairs stacked and chained to the metal benches to provide flexible seating around the pillars that obstruct each bench. (Right, AK_V_02) Chairs and drawers containers plastic cups and bottles placed at a common void deck, adjacent to sheltered walkway connecting the blocks"}
+PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Deck")
+
+PGS_nongardens<-PGS_nongardens %>% 
+  select(-URL)
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **AK-V-01** - Plastic chairs stacked and chained to the metal benches to provide flexible seating around the pillars that obstruct each bench. (Right) **AK-V-02** - Chairs and drawers containers plastic cups and bottles placed at a common void deck, adjacent to sheltered walkway connecting the blocks"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_01.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_02.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_05) A living space erupts at a void deck beside a barricaded store. Fridges that draw power provision from the store with the complementing furniture provided, gives a rather personalised space of interaction. (Right, AK_V_06) Chairs stack in all manners at this vantage space, where sheltered walkways meet, going to adjacent blocks and across the two coffeeshops found nearby"}
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="AK-V-01"| `Location ID`=="AK-V-02") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("AK-V-01 - Unassuming and simple", "AK-V-02 - Extending the seats" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **AK-V-05** - A living space erupts at a void deck beside a barricaded store. Fridges that draw power provision from the store with the complementing furniture provided, gives a rather personalised space of interaction. (Right) **AK-V-06** - Chairs stack in all manners at this vantage space, where sheltered walkways meet, going to adjacent blocks and across the two coffeeshops found nearby"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_05.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_06.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="AK-V-05"| `Location ID`=="AK-V-06") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("AK-V-05 - A living space in the void", "AK-V-06 - Viewing the traffic" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_07) A table tennis table attempts to hide the wooden chairs that hang around it. (Right, AK_V_09) A myriad of different furniture placed in a rather non-orderly manner impresses a buzz in the vicinity, especially since the block where basic neighbourhood functions are provided is found across it"}
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **AK-V-07** - A table tennis table attempts to hide the wooden chairs that hang around it. (Right) **AK-V-09** - A myriad of different furniture placed in a rather non-orderly manner impresses a buzz in the vicinity, especially since the block where basic neighbourhood functions are provided is found across it"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_07.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_09.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_V_12) A hidden corner serving the utility rooms of the block provides shade and a small smoking corner for its users. (Right, AK_O_01) Hidden behind the famous chicken rice franchise lies a gathering corner with varying types of seats available and a potted environment for privacy"}
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="AK-V-07"| `Location ID`=="AK-V-09") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("AK-V-07 - More than sports", "AK-V-09 - A quaint space for activity" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
+
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **AK-V-12** - A hidden corner serving the utility rooms of the block provides shade and a small smoking corner for its users. (Right) **AK-O-01** - Hidden behind a famous chicken rice franchise lies a gathering corner with varying types of seats available and a potted environment for privacy"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_V_12.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_01.jpg",dpi = 72)
 ```
 
-```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left, AK_O_02) Stacks of wooden benches give evidence of a popular outdoor space adjacent to a coffeeshop and the lorry park nearby. (Right, AK_O_03) Additional chairs and a dustbin give residents more flexibility in using this shelter that overlooks the nearby food centre and a small community garden beside it"}
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  arrange(`Seating Capacity`) %>% 
+  filter(`Location ID`=="AK-V-12"| `Location ID`=="AK-O-01") %>%
+  select('Location ID', Remarks) %>% 
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("AK-V-12 - A short break from work", "AK-O-01 - Behind the kitchen" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
+
+```{r message=FALSE,echo=FALSE,warning=FALSE, out.width = '50%', fig.show='hold',fig.align='center', fig.cap="(Left) **AK-O-02** - Stacks of wooden benches give evidence of a popular outdoor space adjacent to a coffeeshop and the lorry park nearby. (Right) **AK-O-03** - Additional chairs and a dustbin give residents more flexibility in using this shelter that overlooks the nearby food centre and a small community garden beside it"}
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_02.jpg",dpi = 72)
 include_graphics("/Users/garethconceicao/Desktop/Independent Research/irp/irp/irpdata/Amk People Generated/AK_O_03.jpg",dpi = 72)
 ```
 
+```{r message=FALSE,warning=FALSE, echo=FALSE}
+PGS_nongardens %>%
+  filter(`Location ID`=="AK-O-02"| `Location ID`=="AK-O-03") %>%
+  select('Location ID', Remarks) %>%
+  pivot_wider(names_from = 'Location ID',values_from = Remarks) %>%
+  kable(col.names = c("AK-O-O2 - Carpark viewing", "AK-O-03 - Chilling by the garden" ),align = 'c') %>%
+  column_spec(1:2,width_min = "10cm",background = "#F2E2BC") %>% 
+  column_spec(1, border_right = TRUE) %>% 
+  row_spec(1,align ='justify' )
+```
 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 saveRDS(Ak_peoplegenerated_VO,here::here('irpdata/AmkPeopleGenerated.rds'))
