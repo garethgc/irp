@@ -7,6 +7,8 @@ output: html_document
 
 # Ang Mo Kio
 
+Ang Mo Kio is the youngest among the three neighbourhoods explored in this project but it has a variety of HDB estates throughout. Interestingly, Ang Mo Kio has been experiencing high valuation of its housing developments in recent years which could be due to the good amount of neighbourhood upgrading such as bicycle pathways. As compared to the neighbourhoods of Hougang and Bedok, it has a relatively higher proportion of private housing in its estate and good access to parks. These amenities have given Ang Mo Kio residents a good connection to a variety of lifestyles. 
+
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
 library(tidyverse)
 library(sf)
@@ -74,7 +76,9 @@ Ak_peoplegenerated_VO<-Ak_peoplegenerated %>%
 
 ## Journey through Ang Mo Kio
 
+Starting from the eastern portion of Ang Mo Kio, which is the Cheng San and Teck Ghee HDB estates, there are interesting types of spaces, both state-provided and people-generated. The HDB developments in these areas are relatively older, with only one section near the highway interchange being newly developed. As such, amenities such as coffeeshops, resident corners and elderly care centres are distributed quite evenly. That being said, people-generated spaces found here are in a more personalised nature, with even signs of working activity taking place in these spaces (work table rather than dining tables and washing points with equipment). There is also a certain lull in these spaces, with the setups tending towards longer occupation within the spaces. 
 
+Towards the central and western portions of Ang Mo Kio provides more nuanced spaces, with back corners showing more privacy, seating placement facing towards roads and walkways encouraging people-watching and an advanced space resembling a shared living room in the middle of the void deck. The northern portions of Ang Mo Kio has a different elevation and hence, different style of HDB estates and layouts. The Kebun Baru and Yio Chu Kang areas are relatively simple, with only one significant people-generated space near a garden. Gardens are prominent in this area as with the different elevations, it provided for nice corners of getaways for residents. 
 ```{r message=FALSE,echo=FALSE,warning=FALSE}
 tmap_mode("view")
 
