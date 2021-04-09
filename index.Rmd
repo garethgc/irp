@@ -1,6 +1,6 @@
 --- 
 title: "People-generated spaces and their developments in mature HDB estates"
-author: "Gareth Conceicao 1004755"
+author: "Gareth Conceicao"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]

@@ -29,7 +29,7 @@ library(kableExtra)
 ```
 
 ```{r message=FALSE,echo=FALSE, warning=FALSE}
-PGS<-read_csv(here::here('/irpdata/PeopleGeneratedspacesv2.csv'))
+PGS<-read_csv(here::here('irpdata/PeopleGeneratedspacesv2.csv'))
 
 PGS_nongardens<-filter(PGS,`Type of Space`=="Outdoor"|`Type of Space`=="Void Deck")
 
